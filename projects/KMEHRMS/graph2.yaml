@@ -1,0 +1,258 @@
+- type: Tree
+  rows:
+    - label: Bundle
+      rows:
+        - label: Composition 1..1
+          rows:
+            - label: identifier
+              id: fhirms.Bundle.Composition 1..1.identifier
+            - label: date
+              id: fhirms.Bundle.Composition 1..1.date
+            - label: author
+              isCollapsed: true
+              rows:
+                - label: author[Organization]
+                  rows:
+                    - label: display
+                      id: >-
+                        fhirms.Bundle.Composition
+                        1..1.author.author[Organization].display
+                    - label: identifier
+                      rows:
+                        - label: type
+                          id: >-
+                            fhirms.Bundle.Composition
+                            1..1.author.author[Organization].identifier.type
+                        - label: value
+                          id: >-
+                            fhirms.Bundle.Composition
+                            1..1.author.author[Organization].identifier.value
+                      id: >-
+                        fhirms.Bundle.Composition
+                        1..1.author.author[Organization].identifier
+                  id: fhirms.Bundle.Composition 1..1.author.author[Organization]
+                - label: author[Practitioner]
+                  rows:
+                    - label: display
+                      id: >-
+                        fhirms.Bundle.Composition
+                        1..1.author.author[Practitioner].display
+                    - label: reference(Practitioner)
+                      rows:
+                        - label: <b>identifier
+                          id: >-
+                            fhirms.Bundle.Composition
+                            1..1.author.author[Practitioner].reference(Practitioner).<b>identifier
+                        - label: name
+                          rows:
+                            - label: text
+                              id: >-
+                                fhirms.Bundle.Composition
+                                1..1.author.author[Practitioner].reference(Practitioner).name.text
+                            - label: <b>family 1..1
+                              id: >-
+                                fhirms.Bundle.Composition
+                                1..1.author.author[Practitioner].reference(Practitioner).name.<b>family
+                                1..1
+                            - label: <b>given 1..1
+                              id: >-
+                                fhirms.Bundle.Composition
+                                1..1.author.author[Practitioner].reference(Practitioner).name.<b>given
+                                1..1
+                          id: >-
+                            fhirms.Bundle.Composition
+                            1..1.author.author[Practitioner].reference(Practitioner).name
+                      id: >-
+                        fhirms.Bundle.Composition
+                        1..1.author.author[Practitioner].reference(Practitioner)
+                  id: fhirms.Bundle.Composition 1..1.author.author[Practitioner]
+              id: fhirms.Bundle.Composition 1..1.author
+            - label: status 1..1
+              id: fhirms.Bundle.Composition 1..1.status 1..1
+          id: fhirms.Bundle.Composition 1..1
+        - label: Patient 1..1
+          isCollapsed: false
+          rows:
+            - label: <b>identifier
+              id: fhirms.Bundle.Patient 1..1.<b>identifier
+            - label: name
+              rows:
+                - label: <b>family 1..1
+                  id: fhirms.Bundle.Patient 1..1.name.<b>family 1..1
+                - label: <b>given 1..1
+                  id: fhirms.Bundle.Patient 1..1.name.<b>given 1..1
+              id: fhirms.Bundle.Patient 1..1.name
+            - label: gender
+              id: fhirms.Bundle.Patient 1..1.gender
+              rows:
+              - label: changed
+                id: fhirms.Bundle.Patient 1..1.genderchanged
+            - label: birthDate
+              id: fhirms.Bundle.Patient 1..1.birthDate
+            - label: address
+              rows:
+                - label: line
+                  id: fhirms.Bundle.Patient 1..1.address.line
+                - label: city
+                  id: fhirms.Bundle.Patient 1..1.address.city
+                - label: postalCode
+                  id: fhirms.Bundle.Patient 1..1.address.postalCode
+                - label: country
+                  id: fhirms.Bundle.Patient 1..1.address.country
+              id: fhirms.Bundle.Patient 1..1.address
+          id: fhirms.Bundle.Patient 1..1
+        - label: MedicationTreatmentLine 0..*
+          rows:
+            - label: identifier
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.identifier
+            - label: category
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.category
+            - label: medication[CodeableConcept]
+              rows:
+                - label: coding
+                  rows:
+                    - label: system
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.medication[CodeableConcept].coding.system
+                    - label: code
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.medication[CodeableConcept].coding.code
+                    - label: display
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.medication[CodeableConcept].coding.display
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.medication[CodeableConcept].coding
+                - label: text
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.medication[CodeableConcept].text
+              id: >-
+                fhirms.Bundle.MedicationTreatmentLine
+                0..*.medication[CodeableConcept]
+            - label: medication[Reference]
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.medication[Reference]
+            - label: effectiveDateTime
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.effectiveDateTime
+            - label: effectivePeriod
+              rows:
+                - label: beginDate
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.effectivePeriod.beginDate
+                - label: endDate
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.effectivePeriod.endDate
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.effectivePeriod
+            - label: dosage
+              rows:
+                - label: text
+                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.text
+                - label: timing
+                  rows:
+                    - label: period
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.timing.period
+                    - label: periodUnit
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.timing.periodUnit
+                    - label: code
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.timing.code
+                    - label: repeat
+                      rows:
+                        - label: when+
+                          id: >-
+                            fhirms.Bundle.MedicationTreatmentLine
+                            0..*.dosage.timing.repeat.when+
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.timing.repeat
+                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.timing
+                - label: route
+                  rows:
+                    - label: coding
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.route.coding
+                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.route
+                - label: doseAndRate
+                  rows:
+                    - label: doseQuantity
+                      rows:
+                        - label: value
+                          id: >-
+                            fhirms.Bundle.MedicationTreatmentLine
+                            0..*.dosage.doseAndRate.doseQuantity.value
+                        - label: code
+                          id: >-
+                            fhirms.Bundle.MedicationTreatmentLine
+                            0..*.dosage.doseAndRate.doseQuantity.code
+                      id: >-
+                        fhirms.Bundle.MedicationTreatmentLine
+                        0..*.dosage.doseAndRate.doseQuantity
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.dosage.doseAndRate
+                - label: patientInstruction
+                  id: >-
+                    fhirms.Bundle.MedicationTreatmentLine
+                    0..*.dosage.patientInstruction
+              id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage
+          id: fhirms.Bundle.MedicationTreatmentLine 0..*
+      id: fhirms.Bundle
+  rowHeight: 25
+  headerHeight: 20
+  headerText: FHIR Medication <a href="#tab2">Scheme</a>
+  attrs:
+    header:
+      fill: '#EE4B4A'
+  position:
+    x: 1600
+    'y': 320
+  id: fhirms
+
+
+
+
+- type: Tree
+  headerText: Practitioner
+  label: Practitioner
+  rows:
+    - label: id
+    - label: meta
+    - label: implicitRules
+    - label: language
+    - label: text
+    - label: contained
+    - label: extension
+    - label: modifierExtension
+    - label: identifier
+    - label: active
+    - label: name
+    - label: telecom
+    - label: address
+    - label: gender
+    - label: birthDate
+    - label: photo
+    - label: qualification
+      rows:
+        - label: id
+        - label: extension
+        - label: modifierExtension
+        - label: identifier
+        - label: code
+        - label: period
+        - label: issuer
+    - label: communication
+  rowHeight: 25
+  position:
+    x: 2145
+    'y': 420

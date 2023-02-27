@@ -1,0 +1,251 @@
+- rowHeight: 25
+  headerHeight: 25
+  headerText: <a href="http://www.google.com">KMEHR Medication Scheme</a>
+  attrs:
+    header:
+      fill: '#003B4A'
+  position:
+    x: 200
+    'y': 35
+  id: kmehrms
+  type: Tree
+  label: KMEHRMS
+  rows:
+    - label: KMEHRMessage
+      rows:
+        - label: header
+          rows:
+            - label: id
+            - label: standard
+              rows:
+                - label: cd
+            - label: date
+            - label: time
+            - label: sender
+              rows:
+                - label: hcparty-hub
+                  rows:
+                    - label: id
+                    - label: cd
+                    - label: name
+                - label: hcparty-org
+                  rows:
+                    - label: id
+                    - label: cd
+                    - label: name
+                - label: hcparty-individual
+                  rows:
+                    - label: id-riziv
+                    - label: id-inss
+                    - label: cd
+                    - label: firstname
+                    - label: familyname
+            - label: recipient
+              rows:
+                - label: hcparty-hub
+                  rows:
+                    - label: id
+                    - label: cd
+                    - label: name
+                - label: hcparty-org
+                  rows:
+                    - label: id
+                    - label: cd
+                    - label: name
+                - label: hcparty-individual
+                  rows:
+                    - label: id-riziv
+                    - label: id-inss
+                    - label: cd
+                    - label: firstname
+                    - label: familyname
+        - label: folder
+          rows:
+            - label: id-kmehr
+            - label: patient
+
+            - label: MSTransaction
+              rows:
+                - label: id-others
+                - label: cd
+                - label: date
+                - label: time
+                - label: author
+                  rows:
+                    - label: hcparty-hub
+                      rows:
+                        - label: id
+                        - label: cd
+                        - label: name
+                    - label: hcparty-org
+                      rows:
+                        - label: id
+                        - label: cd
+                        - label: name
+                    - label: hcparty-individual
+                      rows:
+                        - label: id-riziv
+                        - label: id-inss
+                        - label: cd
+                        - label: firstname
+                        - label: familyname
+                - label: isComplete
+                - label: isValidated
+                - label: version
+            - label: MSETransaction
+              rows:
+                - label: id-kmehr
+                - label: id-other
+                - label: cd
+                - label: date
+                - label: time
+                - label: author
+                  rows:
+                    - label: hcparty-hub
+                      rows:
+                        - label: id
+                        - label: cd
+                        - label: name
+                    - label: hcparty-org
+                      rows:
+                        - label: id
+                        - label: cd
+                        - label: name
+                    - label: hcparty-individual
+                      rows:
+                        - label: id-riziv
+                        - label: id-inss
+                        - label: cd
+                        - label: firstname
+                        - label: familyname
+                - label: isComplete
+                - label: isValidated
+                - label: version
+                - label: item
+                  rows:
+                    - label: id
+                    - label: cd
+                    - label: medicationUse
+                    - label: beginMoment
+                    - label: endMoment
+                    - label: duration
+                    - label: content
+                      rows:
+                        - label: medicinalproduct
+                          rows:
+                            - label: intendedName
+                            - label: intendedCd
+                            - label: deliveredName
+                            - label: deliveredCd
+                        - label: substanceproduct
+                          rows:
+                            - label: intendedName
+                            - label: intendedCd
+                            - label: deliveredName
+                            - label: deliveredCd
+                        - label: compoundprescription
+                          rows:
+                            - label: compoundprescription
+                            - label: name
+                            - label: magistraltext
+                    - label: text
+                    - label: temporality
+                      rows:
+                        - label: cd
+                    - label: frequency
+                      rows:
+                        - label: periodicity
+                          rows:
+                            - label: cd
+                    - label: posology
+                      rows:
+                        - label: text
+                    - label: regimen
+                      rows:
+                        - label: date
+                        - label: weekday
+                          rows:
+                            - label: cd
+                        - label: daynumber
+                        - label: daytime
+                          rows:
+                            - label: time
+                            - label: dayperiod
+                              rows:
+                                - label: cd
+                        - label: quantity
+                          rows:
+                            - label: decimal
+                            - label: unit
+                              rows:
+                                - label: cd
+                    - label: route
+                      rows:
+                        - label: cd
+                    - label: instructionforpatient
+                      rows:
+                        - label: text
+                    - label: transactionreason
+
+
+
+- type: Transform
+  group: g1
+  rowHeight: 30
+  headerText: <a href="#temporality">Temporality</a>
+  attrs:
+    header:
+      fill: '#cfc615'
+  position:
+    x: 995
+    'y': 1055
+  id: transformShape
+  leftRows:
+    - label: <a href="#tab2">TEMPORALITY</a>
+  rightRows:
+    - label: (New)
+- type: Transform
+  rowHeight: 30
+  headerText: Periodicity
+  attrs:
+    header:
+      fill: '#cfc615'
+  position:
+    x: 995
+    'y': 1200
+  leftRows:
+    - label: <a target=\"_blank\" href='http://www.gmail.com'>Periodicity (New)</a>
+  rightRows:
+    - label: (New)
+  id: f58fe9a8-9029-4313-9a2c-a3c17874e215
+- type: Transform
+  rowHeight: 30
+  headerText: DayPeriod
+  attrs:
+    header:
+      fill: '#cfc615'
+  position:
+    x: 1030
+    'y': 1285
+  leftRows:
+    - label: <a target=\"_blank\" href='http://www.gmail.com'>DayPeriod</a>
+  rightRows:
+    - label: (New)
+  id: f7b79056-af23-4c34-8a49-3fe76e0639ff
+
+- type: Transform
+  rowHeight: 30
+  headerText: AdministrationUnit
+  attrs:
+    header:
+      fill: '#cfc615'
+  position:
+    x: 900
+    'y': 1460
+  leftRows:
+    - label: <a target=\"_blank\" href='http://www.gmail.com'>AdministrationUnit</a>
+  rightRows:
+    - label: BeVSRoutesOfAdministration
+  id: 675d8d61-f231-4ab3-afdb-aa4adfc60096
+
+

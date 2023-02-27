@@ -1,0 +1,637 @@
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.identifier.mpId
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.code
+    portType: outPort
+  id: e7c7e306-5cd4-4038-86be-beb5f1bcc14b
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.name.fullName
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.name
+    portType: outPort
+  id: 4b026cfb-c19e-468f-bd82-55a9df53aa82
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.authorisedDoseForm
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.formcode
+    portType: outPort
+  id: 043747cf-dc1d-4479-8d4c-6452e93853e9
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asContent.containerPackagedProduct
+    portType: outPort
+  id: 6b4f36c7-6f7a-4a29-b264-43b6ef82ad74
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.part.partProduct
+    portType: outPort
+  id: b8edd34e-6ac5-4c75-9c97-ef9c7681968d
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.manufacturedDoseForm
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.part.partProduct.formCode
+    portType: outPort
+  id: b7285255-6364-459c-bba9-b61125421615
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.substance
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.ingredient.ingredientSubstance.code
+    portType: outPort
+  id: 1cbfbf50-452c-4c4c-a9a3-de46fc9fd880
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.substance
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.ingredient.ingredientSubstance.code
+    portType: outPort
+  id: 6d1ca85d-a646-4c4d-a1b1-c2f1632bf91f
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.ingredient.quantity
+    portType: outPort
+  id: fdc49be5-09b9-48c5-aa3b-cfbe7e418e20
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.strength
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.ingredient.quantity
+    portType: outPort
+  id: dec21186-83e7-405a-8606-46a07dd330af
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.classification.classificationATC
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asSpecializedKind.generalizedMaterialKind.code
+    portType: outPort
+  id: b293bf34-3c91-44b1-b1db-1d8e4b8f3a8c
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.pharmaceuticalProduct.identifier.phpid
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.part.partProduct.asSpecializedKind
+    portType: outPort
+  id: a15c9f19-2c3d-4424-9956-2dd1ec889703
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.pharmaceuticalProduct.identifier.phpid
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asSpecializedKind2.generalizedMaterialKind.code
+    portType: outPort
+  id: 540b0405-a594-476a-b1eb-250abc0c5bfc
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.identifier.pcid
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: >-
+      ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.code
+    portType: outPort
+  id: eb1fcc2e-72c9-47c4-a3e6-01ed7774d589
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.identifier.nationalId
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: >-
+      ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.code
+    portType: outPort
+  id: 15891e5a-8fe7-4f94-a32e-dcc41cc66055
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.packaging.packageType
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: >-
+      ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.formcode
+    portType: outPort
+  id: 2e8bbf0e-4984-4943-9edc-3a3a1c25c17f
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.packaging.packageType
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asContent.containerPackagedProduct.formcode
+    portType: outPort
+  id: aebdfce6-3e86-4182-a8af-7fa7ba533154
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.packagedProductDefinition.packaging.quantity
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asContent.containerPackagedProduct.asContent.quantity
+    portType: outPort
+  id: 59d1949b-33c2-4b6e-93ca-5887e62f741e
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.amount
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.asContent.containerPackagedProduct.asContent.quantity
+    portType: outPort
+  id: 08723f1a-a06d-48f1-89b5-99bfe9b61d20
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.part.partProduct.ingredient
+    portType: outPort
+  id: a0d15e6c-2020-4a5c-9cc2-b35c9b52b08e
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: >-
+      FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.ingredient
+    portType: outPort
+  id: 7ce79ac9-9063-4788-9cf9-b5f194cdc142
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.identifier.nationalId
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.code
+    portType: outPort
+  id: 710150b0-57c2-45ac-83a4-b9ddd5be5040
+- type: Link
+  source:
+    id: FullMedicinalProduct
+    rowId: FullMedicinalProduct.identifier.pmsId
+    portType: inPort
+  target:
+    id: ManufacturedMaterial
+    rowId: ManufacturedMaterial.code
+    portType: outPort
+  id: 7279315e-7f9c-4e3c-81cc-a77d994f76aa
+- type: Tree
+  rows:
+    - label: code
+      id: ManufacturedMaterial.code
+    - label: name
+      id: ManufacturedMaterial.name
+    - label: formcode
+      id: ManufacturedMaterial.formcode
+    - label: asContent
+      rows:
+        - label: quantity
+          id: ManufacturedMaterial.asContent.quantity
+        - label: containerPackagedProduct
+          rows:
+            - label: code
+              id: ManufacturedMaterial.asContent.containerPackagedProduct.code
+            - label: name
+              id: ManufacturedMaterial.asContent.containerPackagedProduct.name
+            - label: formcode
+              id: ManufacturedMaterial.asContent.containerPackagedProduct.formcode
+            - label: asContent
+              rows:
+                - label: quantity
+                  id: >-
+                    ManufacturedMaterial.asContent.containerPackagedProduct.asContent.quantity
+                - label: containerPackagedProduct
+                  rows:
+                    - label: code
+                      id: >-
+                        ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.code
+                    - label: name
+                      id: >-
+                        ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.name
+                    - label: formcode
+                      id: >-
+                        ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.formcode
+                    - label: asContent
+                      id: >-
+                        ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct.asContent
+                  id: >-
+                    ManufacturedMaterial.asContent.containerPackagedProduct.asContent.containerPackagedProduct
+              id: >-
+                ManufacturedMaterial.asContent.containerPackagedProduct.asContent
+          id: ManufacturedMaterial.asContent.containerPackagedProduct
+      id: ManufacturedMaterial.asContent
+    - label: asSpecializedKind
+      rows:
+        - label: generalizedMaterialKind
+          rows:
+            - label: code
+              id: >-
+                ManufacturedMaterial.asSpecializedKind.generalizedMaterialKind.code
+            - label: name
+              id: >-
+                ManufacturedMaterial.asSpecializedKind.generalizedMaterialKind.name
+          id: ManufacturedMaterial.asSpecializedKind.generalizedMaterialKind
+      id: ManufacturedMaterial.asSpecializedKind
+    - label: asSpecializedKind2
+      rows:
+        - label: generalizedMaterialKind
+          rows:
+            - label: code
+              id: >-
+                ManufacturedMaterial.asSpecializedKind2.generalizedMaterialKind.code
+            - label: name
+              id: >-
+                ManufacturedMaterial.asSpecializedKind2.generalizedMaterialKind.name
+          id: ManufacturedMaterial.asSpecializedKind2.generalizedMaterialKind
+      id: ManufacturedMaterial.asSpecializedKind2
+    - label: ingredient
+      rows:
+        - label: quantity
+          rows:
+            - label: numerator
+              id: ManufacturedMaterial.ingredient.quantity.numerator
+            - label: denominator
+              id: ManufacturedMaterial.ingredient.quantity.denominator
+          id: ManufacturedMaterial.ingredient.quantity
+        - label: ingredientSubstance
+          rows:
+            - label: code
+              id: ManufacturedMaterial.ingredient.ingredientSubstance.code
+            - label: name
+              id: ManufacturedMaterial.ingredient.ingredientSubstance.name
+          id: ManufacturedMaterial.ingredient.ingredientSubstance
+      id: ManufacturedMaterial.ingredient
+    - label: part
+      rows:
+        - label: quantity
+          id: ManufacturedMaterial.part.quantity
+        - label: partProduct
+          rows:
+            - label: formCode
+              id: ManufacturedMaterial.part.partProduct.formCode
+            - label: asContent
+              id: ManufacturedMaterial.part.partProduct.asContent
+            - label: asSpecializedKind
+              id: ManufacturedMaterial.part.partProduct.asSpecializedKind
+            - label: part
+              id: ManufacturedMaterial.part.partProduct.part
+            - label: ingredient
+              id: ManufacturedMaterial.part.partProduct.ingredient
+          id: ManufacturedMaterial.part.partProduct
+      id: ManufacturedMaterial.part
+  rowHeight: 25
+  headerHeight: 25
+  headerText: >-
+    <a
+    href="https://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/StructureDefinition-ManufacturedMaterial.html">ManufacturedMaterial</a>
+  attrs:
+    header:
+      fill: '#003B4A'
+    headerLabel:
+      html: >-
+        <a
+        href="https://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/StructureDefinition-ManufacturedMaterial.html"
+        target="_blank">ManufacturedMaterial</a>
+  position:
+    x: 85
+    'y': 241.6666259765625
+  id: ManufacturedMaterial
+  label: ManufacturedMaterial
+- type: Tree
+  rows:
+    - label: identifier
+      rows:
+        - label: mpId
+          id: FullMedicinalProduct.identifier.mpId
+        - label: pmsId
+          id: FullMedicinalProduct.identifier.pmsId
+        - label: nationalId
+          id: FullMedicinalProduct.identifier.nationalId
+      id: FullMedicinalProduct.identifier
+    - label: domain
+      id: FullMedicinalProduct.domain
+    - label: legalStatusOfSupply
+      id: FullMedicinalProduct.legalStatusOfSupply
+    - label: authorisedDoseForm
+      id: FullMedicinalProduct.authorisedDoseForm
+    - label: classification
+      rows:
+        - label: classificationATC
+          id: FullMedicinalProduct.classification.classificationATC
+        - label: classificationOther
+          id: FullMedicinalProduct.classification.classificationOther
+      id: FullMedicinalProduct.classification
+    - label: name
+      rows:
+        - label: fullName
+          id: FullMedicinalProduct.name.fullName
+        - label: part
+          rows:
+            - label: inventedName
+              id: FullMedicinalProduct.name.part.inventedName
+            - label: strength
+              id: FullMedicinalProduct.name.part.strength
+            - label: doseForm
+              id: FullMedicinalProduct.name.part.doseForm
+            - label: other
+              id: FullMedicinalProduct.name.part.other
+          id: FullMedicinalProduct.name.part
+          isCollapsed: true
+        - label: nameUsage
+          rows:
+            - label: jurisdiction
+              id: FullMedicinalProduct.name.nameUsage.jurisdiction
+            - label: language
+              id: FullMedicinalProduct.name.nameUsage.language
+          id: FullMedicinalProduct.name.nameUsage
+          isCollapsed: true
+      id: FullMedicinalProduct.name
+    - label: marketingAuthorisation
+      rows:
+        - label: marketingAuthorisationNumber
+          id: >-
+            FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationNumber
+        - label: region
+          id: FullMedicinalProduct.marketingAuthorisation.region
+        - label: marketingAuthorisationStatus
+          id: >-
+            FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationStatus
+        - label: date
+          id: FullMedicinalProduct.marketingAuthorisation.date
+        - label: marketingAuthorisationHolder
+          rows:
+            - label: locationId
+              id: >-
+                FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationHolder.locationId
+            - label: organisationId
+              id: >-
+                FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationHolder.organisationId
+            - label: mahName
+              id: >-
+                FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationHolder.mahName
+          id: >-
+            FullMedicinalProduct.marketingAuthorisation.marketingAuthorisationHolder
+          isCollapsed: true
+      id: FullMedicinalProduct.marketingAuthorisation
+      isCollapsed: true
+    - label: packagedProductDefinition
+      rows:
+        - label: identifier
+          rows:
+            - label: pcid
+              id: FullMedicinalProduct.packagedProductDefinition.identifier.pcid
+            - label: nationalId
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.identifier.nationalId
+          id: FullMedicinalProduct.packagedProductDefinition.identifier
+        - label: description
+          rows:
+            - label: descriptionText
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.description.descriptionText
+            - label: language
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.description.language
+          id: FullMedicinalProduct.packagedProductDefinition.description
+          isCollapsed: true
+        - label: packSize
+          id: FullMedicinalProduct.packagedProductDefinition.packSize
+        - label: legalStatusOfSupply
+          id: FullMedicinalProduct.packagedProductDefinition.legalStatusOfSupply
+        - label: marketingAuthorisation
+          id: >-
+            FullMedicinalProduct.packagedProductDefinition.marketingAuthorisation
+        - label: marketingStatus
+          rows:
+            - label: country
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.marketingStatus.country
+            - label: status
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.marketingStatus.status
+          id: FullMedicinalProduct.packagedProductDefinition.marketingStatus
+          isCollapsed: true
+        - label: packaging
+          rows:
+            - label: packageType
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.packaging.packageType
+            - label: quantity
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.packaging.quantity
+            - label: material
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.packaging.material
+            - label: innerPackage
+              rows:
+                - label: containedItem
+                  rows:
+                    - label: amount
+                      id: >-
+                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.amount
+                    - label: containedPackage
+                      id: >-
+                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.containedPackage
+                    - label: manufacturedItem
+                      rows:
+                        - label: manufacturedDoseForm
+                          id: >-
+                            FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.manufacturedDoseForm
+                        - label: unitOfPresentation
+                          id: >-
+                            FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.unitOfPresentation
+                        - label: ingredient
+                          rows:
+                            - label: role
+                              id: >-
+                                FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.role
+                            - label: substance
+                              id: >-
+                                FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.substance
+                            - label: strength
+                              rows:
+                                - label: strengthType
+                                  id: >-
+                                    FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.strengthType
+                                - label: strength
+                                  rows:
+                                    - label: numerator
+                                      id: >-
+                                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.strength.numerator
+                                    - label: denominator
+                                      id: >-
+                                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.strength.denominator
+                                  id: >-
+                                    FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.strength
+                                - label: referenceStrength
+                                  rows:
+                                    - label: substance
+                                      id: >-
+                                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.substance
+                                    - label: strength
+                                      rows:
+                                        - label: numerator
+                                          id: >-
+                                            FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.strength.numerator
+                                        - label: denominator
+                                          id: >-
+                                            FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.strength.denominator
+                                      id: >-
+                                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength.strength
+                                  id: >-
+                                    FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength.referenceStrength
+                              id: >-
+                                FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient.strength
+                          id: >-
+                            FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem.ingredient
+                      id: >-
+                        FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem.manufacturedItem
+                  id: >-
+                    FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage.containedItem
+              id: >-
+                FullMedicinalProduct.packagedProductDefinition.packaging.innerPackage
+          id: FullMedicinalProduct.packagedProductDefinition.packaging
+      id: FullMedicinalProduct.packagedProductDefinition
+    - label: pharmaceuticalProduct
+      rows:
+        - label: identifier
+          rows:
+            - label: phpid
+              id: FullMedicinalProduct.pharmaceuticalProduct.identifier.phpid
+            - label: nationalId
+              id: FullMedicinalProduct.pharmaceuticalProduct.identifier.nationalId
+          id: FullMedicinalProduct.pharmaceuticalProduct.identifier
+        - label: administrableDoseForm
+          id: FullMedicinalProduct.pharmaceuticalProduct.administrableDoseForm
+        - label: unitOfPresentation
+          id: FullMedicinalProduct.pharmaceuticalProduct.unitOfPresentation
+        - label: routeOfAdministration
+          id: FullMedicinalProduct.pharmaceuticalProduct.routeOfAdministration
+        - label: ingredientPhP
+          rows:
+            - label: role
+              id: FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.role
+            - label: substance
+              id: >-
+                FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.substance
+            - label: strength
+              rows:
+                - label: strengthType
+                  id: >-
+                    FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.strengthType
+                - label: strength
+                  rows:
+                    - label: numerator
+                      id: >-
+                        FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.strength.numerator
+                    - label: denominator
+                      id: >-
+                        FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.strength.denominator
+                  id: >-
+                    FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.strength
+                - label: referenceStrength
+                  rows:
+                    - label: substance
+                      id: >-
+                        FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.referenceStrength.substance
+                    - label: strength
+                      rows:
+                        - label: numerator
+                          id: >-
+                            FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.referenceStrength.strength.numerator
+                        - label: denominator
+                          id: >-
+                            FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.referenceStrength.strength.denominator
+                      id: >-
+                        FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.referenceStrength.strength
+                  id: >-
+                    FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength.referenceStrength
+              id: >-
+                FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP.strength
+          id: FullMedicinalProduct.pharmaceuticalProduct.ingredientPhP
+          isCollapsed: true
+      id: FullMedicinalProduct.pharmaceuticalProduct
+      isCollapsed: false
+  rowHeight: 25
+  headerHeight: 25
+  headerText: >-
+    <a
+    href="https://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/StructureDefinition-FullMedicinalProduct.html">FullMedicinalProduct</a>
+  attrs:
+    header:
+      fill: '#003B4A'
+    headerLabel:
+      html: >-
+        <a
+        href="https://build.fhir.org/ig/hl7-eu/unicom-ig/branches/mpd-r5/StructureDefinition-FullMedicinalProduct.html"
+        target="_blank">FullMedicinalProduct</a>
+  position:
+    x: 895
+    'y': 41.66666793823242
+  id: FullMedicinalProduct
+  label: FullMedicinalProduct
