@@ -210,7 +210,7 @@
       id: fhirms.Bundle
   rowHeight: 25
   headerHeight: 20
-  headerText: FHIR Medication <a href="#tab2">Scheme</a>
+  headerText: FHIR Medication <a href="https://hl7-be.github.io/medication-record/StructureDefinition-MedRecord.html">Scheme</a>
   attrs:
     header:
       fill: '#EE4B4A'
@@ -221,38 +221,3 @@
 
 
 
-
-- type: Tree
-  headerText: Practitioner
-  label: Practitioner
-  rows:
-    - label: id
-    - label: meta
-    - label: implicitRules
-    - label: language
-    - label: text
-    - label: contained
-    - label: extension
-    - label: modifierExtension
-    - label: identifier
-    - label: active
-    - label: name
-    - label: telecom
-    - label: address
-    - label: gender
-    - label: birthDate
-    - label: photo
-    - label: qualification
-      rows:
-        - label: id
-        - label: extension
-        - label: modifierExtension
-        - label: identifier
-        - label: code
-        - label: period
-        - label: issuer
-    - label: communication
-  rowHeight: 25
-  position:
-    x: 2145
-    'y': 420
