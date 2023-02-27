@@ -1,0 +1,2 @@
+source,target,label,color
+kmehrms.KMEHRMessage.header.id,fhirms.Bundle.Composition 1..1.identifier,,
