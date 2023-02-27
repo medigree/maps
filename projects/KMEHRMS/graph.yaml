@@ -1,6 +1,6 @@
 - rowHeight: 25
   headerHeight: 25
-  headerText: <a href="http://www.google.com">KMEHR Medication Scheme</a>
+  headerText: <a href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html">KMEHR Medication Scheme</a>
   attrs:
     header:
       fill: '#003B4A'
@@ -214,7 +214,7 @@
     x: 995
     'y': 1200
   leftRows:
-    - label: <a target=\"_blank\" href='http://www.gmail.com'>Periodicity (New)</a>
+    - label: <a target=\"_blank\" href='#'>Periodicity (New)</a>
   rightRows:
     - label: (New)
   id: f58fe9a8-9029-4313-9a2c-a3c17874e215
@@ -228,7 +228,7 @@
     x: 1030
     'y': 1285
   leftRows:
-    - label: <a target=\"_blank\" href='http://www.gmail.com'>DayPeriod</a>
+    - label: <a target=\"_blank\" href='#'>DayPeriod</a>
   rightRows:
     - label: (New)
   id: f7b79056-af23-4c34-8a49-3fe76e0639ff
@@ -243,7 +243,7 @@
     x: 900
     'y': 1460
   leftRows:
-    - label: <a target=\"_blank\" href='http://www.gmail.com'>AdministrationUnit</a>
+    - label: <a target=\"_blank\" href='#'>AdministrationUnit</a>
   rightRows:
     - label: BeVSRoutesOfAdministration
   id: 675d8d61-f231-4ab3-afdb-aa4adfc60096
