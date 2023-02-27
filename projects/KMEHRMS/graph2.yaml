@@ -210,7 +210,7 @@
       id: fhirms.Bundle
   rowHeight: 25
   headerHeight: 20
-  headerText: FHIR Medication <a href="https://hl7-be.github.io/medication-record/StructureDefinition-MedRecord.html">Scheme</a>
+  headerText: <a href="https://hl7-be.github.io/medication-record/StructureDefinition-MedRecord.html">FHIR Medication Scheme</a>
   attrs:
     header:
       fill: '#EE4B4A'
