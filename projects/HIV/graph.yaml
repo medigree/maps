@@ -1,0 +1,1668 @@
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.patient_arv_nr
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.arv_nr
+    portType: inPort
+  id: 25a084ea-ef05-4b1a-9b38-36f8469ebaec
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.fullname
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.name[0].text
+    portType: inPort
+  id: db521ac8-faef-4df5-a26f-a4d8237bdb46
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.ethnicity
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.extension.ethnicity
+    portType: inPort
+  id: 21680aec-9fcf-4e40-a381-5c21ce435d2d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.insurance_exp_date
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.insurance_nr.period.end
+    portType: inPort
+  id: 3a9f9829-dcdb-417f-a89b-37aa0be91bd4
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.insurance_nr
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.insurance_nr.value
+    portType: inPort
+  id: 72b866e2-a13f-4bd5-abb3-ab9f2c20c2be
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.national_id9
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.national_id9
+    portType: inPort
+  id: dd43e3c5-e8d7-4e06-9f63-2792e219fb5c
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.national_id12
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.national_id12
+    portType: inPort
+  id: d7814619-de7e-4208-b3bf-4d9774b59b06
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.birth_date
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.birthDate
+    portType: inPort
+  id: cf1136ce-5ee5-4b49-9045-63017fb3af4e
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.passport_nr
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.passport_nr
+    portType: inPort
+  id: c60a1e54-8bb4-4a32-9aa6-9be7df8573a7
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.driver_license
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.identifier.driver_license
+    portType: inPort
+  id: c8814daf-a852-4c94-adea-8c83b2b80b8d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.country
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[temporary].country
+    portType: inPort
+  id: 7b60ae5c-9939-4b5f-b473-4e5ad2e52586
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.province
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[temporary].state
+    portType: inPort
+  id: a447cfad-c3c8-4420-b930-b742d3274207
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.district
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[temporary].district
+    portType: inPort
+  id: f3d4a01a-6bc0-4e81-b803-5e1111e78817
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.commune
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[temporary].city
+    portType: inPort
+  id: 2078a143-0973-4948-8718-9eb331553bd3
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.address
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[temporary].line
+    portType: inPort
+  id: 84f07872-0f24-461c-8cf7-c79af38c7102
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.country
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[permanent].country
+    portType: inPort
+  id: 558c6491-ca02-4969-9188-55ac6b0978f6
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.province
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[permanent].state
+    portType: inPort
+  id: 279a1a73-520b-44a9-9c30-967b00fe51ac
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.district
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[permanent].district
+    portType: inPort
+  id: 4bbe41c4-3a21-431d-8425-6df360dcabeb
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.commune
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[permanent].city
+    portType: inPort
+  id: b5de4c7c-b466-4749-9b2d-9d12d72568f0
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.address
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.address[permanent].line
+    portType: inPort
+  id: e5807426-475e-481c-801b-d27fd801caf6
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.death.date
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.deceasedDateTime
+    portType: inPort
+  id: 019e7eb2-0815-44be-9303-c633a4c87ef1
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.death.cause
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.extension.causeOfDeath
+    portType: inPort
+  id: 03d829dd-c58b-4b59-b70e-b91e882f66e1
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.gender
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: HIVPatient.extension.gender_identity
+    portType: inPort
+  id: 1c37835b-8bcc-4b68-b5cf-974bbf8a2073
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.birth_defects
+    portType: outPort
+  target:
+    id: ChildBirthDefects
+    rowId: ChildBirthDefects.component.code
+    portType: inPort
+  id: ef7c2751-ead5-4a47-a7f2-d38d8c569dd0
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.birth_weight
+    portType: outPort
+  target:
+    id: ChildBirthWeight
+    rowId: ChildBirthWeight.valueInteger
+    portType: inPort
+  id: 5f1ae6b9-a4b9-425d-8360-69c676f5705c
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.pregnancy.outcomes.gestational_age_at_delivery
+    portType: outPort
+  target:
+    id: Pregnancy
+    rowId: Pregnancy.component.gestational_age_at_delivery
+    portType: inPort
+  id: 9d6c48c6-2839-4ba8-af3e-bd6e289bc95f
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.pregnancy.outcomes.delivery_date
+    portType: outPort
+  target:
+    id: Pregnancy
+    rowId: Pregnancy.component.delivery_date
+    portType: inPort
+  id: 3e23f76e-6a8d-4d2e-8640-40f50a1fd31d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.pregnancy.outcomes.outcome_code
+    portType: outPort
+  target:
+    id: Pregnancy
+    rowId: Pregnancy.component.outcome_code
+    portType: inPort
+  id: c9e25e5a-c163-46fc-a216-e4c8321d8099
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.pregnancy.delivery_place
+    portType: outPort
+  target:
+    id: Pregnancy
+    rowId: Pregnancy.extension.location
+    portType: inPort
+  id: b8e2c229-7007-4748-8293-71dc6efe1364
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.pregnancy.date_reported
+    portType: outPort
+  target:
+    id: Pregnancy
+    rowId: Pregnancy.issued
+    portType: inPort
+  id: ebbab920-07aa-43f4-b9b4-3a1e69c0d9c0
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.drug_resistance_test.date_test_performed
+    portType: outPort
+  target:
+    id: DrugResistanceTest
+    rowId: DrugResistanceTest.issued
+    portType: inPort
+  id: 7f7d6f9d-cb2a-4024-bc36-a67c75bd1a55
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.drug_resistance_test.test_result
+    portType: outPort
+  target:
+    id: DrugResistanceTest
+    rowId: DrugResistanceTest.valueCodeableConcept
+    portType: inPort
+  id: 133298e1-6b45-4c4e-8d84-87884876f408
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.drug_resistance_test.date_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.collection.collectedDateTime
+    portType: inPort
+  id: a1ec9959-6e13-489b-b90e-b95223bacb1d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.drug_resistance_test.place_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.extension.collectionPlace
+    portType: inPort
+  id: 00643a2c-bbac-4b16-99a4-776fa893ef4f
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.place_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.extension.collectionPlace
+    portType: inPort
+  id: 8a390df1-7986-4e51-b69f-72880e512679
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.date_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.collection.collectedDateTime
+    portType: inPort
+  id: c4de28ea-4e24-4f3a-ab36-0c8dde338b41
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.cd4_test.date_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.collection.collectedDateTime
+    portType: inPort
+  id: 7a56a8c6-6488-4f62-b479-dfa751a19819
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.cd4_test.place_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.extension.collectionPlace
+    portType: inPort
+  id: 7ee75f1c-82dd-4ef6-a7e2-1285a7bcefc9
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.date_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.collection.collectedDateTime
+    portType: inPort
+  id: 2efb3982-d3a9-4733-b8f8-c5a3526fd648
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.place_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.extension.collectionPlace
+    portType: inPort
+  id: a0eb1554-69d9-4017-9563-d236b0fd1ba3
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.risk_factors.population_group
+    portType: outPort
+  target:
+    id: HIVKeyPopulation
+    rowId: HIVKeyPopulation.category
+    portType: inPort
+  id: d11a6724-4698-4bb2-a206-1237c27b626e
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.risk_factors.risk_behavior
+    portType: outPort
+  target:
+    id: RiskBehavior
+    rowId: RiskBehavior.category
+    portType: inPort
+  id: 224bded5-b4e0-4088-9c2e-5a60c43457bc
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.test_reason
+    portType: outPort
+  target:
+    id: VLTestObservation
+    rowId: VLTestObservation.extension.reason-code
+    portType: inPort
+  id: a7eca9dd-0b41-47da-855a-dce72ccc3b1a
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.date_test_performed
+    portType: outPort
+  target:
+    id: VLTestObservation
+    rowId: VLTestObservation.issued
+    portType: inPort
+  id: 852274e5-8515-48da-8f97-28c8018d8b04
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.test_result
+    portType: outPort
+  target:
+    id: VLTestObservation
+    rowId: VLTestObservation.valueInteger
+    portType: inPort
+  id: ed34f032-9c4a-46e2-9e24-e9a009ab8851
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.vl_test.test_result_other
+    portType: outPort
+  target:
+    id: VLTestObservation
+    rowId: VLTestObservation.valueCodeableConcept
+    portType: inPort
+  id: 877f277a-c67c-46bf-bd51-2060f9d60758
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.cd4_test.test_reason
+    portType: outPort
+  target:
+    id: CD4Observation
+    rowId: CD4Observation.extension.reason-code
+    portType: inPort
+  id: 9950f503-7bf6-4420-884c-b6fd6ef038d4
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.cd4_test.date_test_performed
+    portType: outPort
+  target:
+    id: CD4Observation
+    rowId: CD4Observation.issued
+    portType: inPort
+  id: 27aafdde-202e-4a35-ab9b-9b550851eb0e
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.cd4_test.test_result
+    portType: outPort
+  target:
+    id: CD4Observation
+    rowId: CD4Observation.valueInteger
+    portType: inPort
+  id: 70684344-dd90-4f12-8a10-97e91abcd991
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_diagnosis.place_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.extension.collectionPlace
+    portType: inPort
+  id: 723dba74-55c8-4d9a-b555-59cd7b70cf36
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_diagnosis.date_specimen_collected
+    portType: outPort
+  target:
+    id: Specimen
+    rowId: Specimen.collection.collectedDateTime
+    portType: inPort
+  id: 9960f791-e48b-47a5-b864-fed52fc62cd9
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.hiv_diagnosis.confirmation_date
+    portType: outPort
+  target:
+    id: HIVDiagnosisObservation
+    rowId: HIVDiagnosisObservation.issued
+    portType: inPort
+  id: c15ab5e2-88a3-4b1e-8919-18116d48fa55
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: hiv-case-report-questionnaire.questions.hiv_diagnosis.confirming_lab
+    portType: outPort
+  target:
+    id: HIVDiagnosisObservation
+    rowId: HIVDiagnosisObservation.performer.organization
+    portType: inPort
+  id: 29a83f75-9548-40c8-aba0-709f884128fb
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.date_test_performed
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.issued
+    portType: inPort
+  id: 628a3308-8388-4d4a-abba-46fa654bbb13
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.test_result
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.component[rapidTest].value
+    portType: inPort
+  id: ac15a991-0f71-471c-9a3f-bb01ec135dfe
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.date_test_performed
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.issued
+    portType: inPort
+  id: 5a7369b4-c61b-4472-adf7-f3efc886255c
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.test_result
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.component[vlTest].valueInteger
+    portType: inPort
+  id: d75d56de-6a87-46d7-838f-5ce6a86b0fa2
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.test_result_other
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.component[vlTest].valueCodeableConcept
+    portType: inPort
+  id: 153ee3f1-a8d9-47d8-9b0f-25bf62d6a872
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.hiv_recency_test.recent_infection_conclusion
+    portType: outPort
+  target:
+    id: HIVRecencyObservation
+    rowId: HIVRecencyObservation.interpretation
+    portType: inPort
+  id: 99624a82-459d-49a8-a844-be3cdfb0ecdf
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_national_id12
+    portType: outPort
+  target:
+    id: IndexRelation
+    rowId: IndexRelation.identifier.national_id12
+    portType: inPort
+  id: 1cf71e09-e383-4e83-b3ae-f0382c48ff4d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_national_id9
+    portType: outPort
+  target:
+    id: IndexRelation
+    rowId: IndexRelation.identifier.national_id9
+    portType: inPort
+  id: 004adea1-021f-4d3f-94e3-bc12fa80ff0d
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_uid
+    portType: outPort
+  target:
+    id: IndexRelation
+    rowId: IndexRelation.identifier.case_id
+    portType: inPort
+  id: 20f79ca5-70be-4f85-a950-0ba9c41e3220
+- type: Link
+  source:
+    id: ChildBirthWeight
+    rowId: ChildBirthWeight.subject
+    portType: outPort
+  target:
+    id: HIVChild
+    rowId: HIVChild.identifier
+    portType: inPort
+  id: 83da69db-5dfc-4d40-81f6-9e416a0d8e93
+- type: Link
+  source:
+    id: Child
+    rowId: ChildRelation.identifier
+    portType: outPort
+  target:
+    id: HIVChild
+    rowId: HIVChild.identifier
+    portType: inPort
+  id: 5b944a9b-0f20-46b1-8ddb-ee931d793cb3
+- type: Link
+  source:
+    id: Child
+    rowId: ChildRelation.Patient
+    portType: outPort
+  target:
+    id: HIVPatient
+    rowId: hiv-patient
+    portType: inPort
+  id: 0eb9d284-d41b-4f53-abab-11599c79bbac
+- type: Link
+  source:
+    id: 72094663-8cc9-42b9-af77-af504dce6995
+    rowId: >-
+      hiv-case-report-questionnaire.questions.patient_identification.personal_information.occupation
+    portType: outPort
+  target:
+    id: Occupation
+    rowId: Occupation.category
+    portType: inPort
+  id: b6ee1797-37cd-4b90-81ac-8f5be1965411
+- type: Tree
+  rows:
+    - label: ChildBirthDefects
+      id: ChildBirthDefects
+      rows:
+        - label: subject
+          id: ChildBirthDefects.subject
+        - label: code
+          id: ChildBirthDefects.code
+        - label: component
+          rows:
+            - label: code
+              id: ChildBirthDefects.component.code
+            - label: valueCodeableConcept
+              id: ChildBirthDefects.component.valueCodeableConcept
+          id: ChildBirthDefects.component
+  rowHeight: 25
+  headerText: ChildBirthDefects
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 910
+    'y': 2300
+  id: ChildBirthDefects
+- type: Row
+  text: 'LOINC # 89365-1'
+  rowHeight: 40
+  autoSize: false
+  position:
+    x: 2960
+    'y': 1710
+  size:
+    width: 190
+  id: FixedValue
+- type: Tree
+  rows:
+    - label: HIVDiagnosisObservation
+      id: HIVDiagnosisObservation
+      rows:
+        - label: issued
+          id: HIVDiagnosisObservation.issued
+        - label: value
+          id: HIVDiagnosisObservation.value
+        - label: performer
+          rows:
+            - label: organization
+              id: HIVDiagnosisObservation.performer.organization
+          id: HIVDiagnosisObservation.performer
+  rowHeight: 25
+  headerText: HIVDiagnosisObservation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1500
+    'y': 960
+  id: HIVDiagnosisObservation
+- type: Tree
+  rows:
+    - label: Specimen
+      id: Specimen
+      rows:
+        - label: extension
+          id: Specimen.extension
+          rows:
+            - label: collectionPlace
+              id: Specimen.extension.collectionPlace
+        - label: collection
+          rows:
+            - label: collectedDateTime
+              id: Specimen.collection.collectedDateTime
+          id: Specimen.collection
+  rowHeight: 25
+  headerText: Specimen
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1080
+    'y': 1400
+  id: Specimen
+- type: Tree
+  rows:
+    - label: HIVRecencyObservation
+      id: HIVRecencyObservation
+      rows:
+        - label: issued
+          id: HIVRecencyObservation.issued
+        - label: interpretation
+          id: HIVRecencyObservation.interpretation
+        - label: component
+          id: HIVRecencyObservation.component
+          rows:
+            - label: '[rapidTest]'
+              id: HIVRecencyObservation.component[rapidTest]
+              rows:
+                - label: code
+                  id: HIVRecencyObservation.component[rapidTest].code
+                - label: value
+                  id: HIVRecencyObservation.component[rapidTest].value
+            - label: '[vlTest]'
+              id: HIVRecencyObservation.component[vlTest]
+              rows:
+                - label: code
+                  id: HIVRecencyObservation.component[vlTest].code
+                - label: valueInteger
+                  id: HIVRecencyObservation.component[vlTest].valueInteger
+                - label: valueCodeableConcept
+                  id: HIVRecencyObservation.component[vlTest].valueCodeableConcept
+        - label: performer
+          rows:
+            - label: organization
+              id: HIVRecencyObservation.performer.organization
+          id: HIVRecencyObservation.performer
+  rowHeight: 25
+  headerText: HIVRecencyObservation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1990
+    'y': 1080
+  id: HIVRecencyObservation
+- type: Tree
+  rows:
+    - label: VLTestObservation
+      id: VLTestObservation
+      rows:
+        - label: extension
+          id: VLTestObservation.extension
+          rows:
+            - label: reason-code
+              id: VLTestObservation.extension.reason-code
+        - label: issued
+          id: VLTestObservation.issued
+        - label: valueInteger
+          id: VLTestObservation.valueInteger
+        - label: valueCodeableConcept
+          id: VLTestObservation.valueCodeableConcept
+  rowHeight: 25
+  headerText: VLTestObservation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1540
+    'y': 1720
+  id: VLTestObservation
+- type: Tree
+  rows:
+    - label: CD4Observation
+      id: CD4Observation
+      rows:
+        - label: extension
+          id: CD4Observation.extension
+          rows:
+            - label: reason-code
+              id: CD4Observation.extension.reason-code
+        - label: issued
+          id: CD4Observation.issued
+        - label: valueInteger
+          id: CD4Observation.valueInteger
+        - label: valueCodeableConcept
+          id: CD4Observation.valueCodeableConcept
+  rowHeight: 25
+  headerText: CD4Observation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1550
+    'y': 1490
+  id: CD4Observation
+- type: Tree
+  rows:
+    - label: DrugResistanceTest
+      id: DrugResistanceTest
+      rows:
+        - label: issued
+          id: DrugResistanceTest.issued
+        - label: valueCodeableConcept
+          id: DrugResistanceTest.valueCodeableConcept
+  rowHeight: 25
+  headerText: DrugResistanceTest
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1060
+    'y': 1680
+  id: DrugResistanceTest
+- type: Tree
+  rows:
+    - label: Pregnancy
+      id: Pregnancy
+      rows:
+        - label: extension
+          id: Pregnancy.extension
+          rows:
+            - label: location
+              id: Pregnancy.extension.location
+            - label: valueCodeableConcept
+              id: Pregnancy.extension.valueCodeableConcept
+        - label: issued
+          id: Pregnancy.issued
+        - label: valueCodeableConcept
+          id: Pregnancy.valueCodeableConcept
+        - label: component
+          rows:
+            - label: outcome_code
+              id: Pregnancy.component.outcome_code
+            - label: delivery_date
+              id: Pregnancy.component.delivery_date
+            - label: gestational_age_at_delivery
+              id: Pregnancy.component.gestational_age_at_delivery
+          id: Pregnancy.component
+  rowHeight: 25
+  headerText: Pregnancy
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 900
+    'y': 1940
+  id: Pregnancy
+- type: Tree
+  rows:
+    - label: HIVChild
+      id: HIVChild
+      rows:
+        - label: identifier
+          id: HIVChild.identifier
+  rowHeight: 25
+  headerText: HIVChild
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1610
+    'y': 2020
+  id: HIVChild
+- type: Tree
+  rows:
+    - label: ChildRelation
+      id: ChildRelation
+      rows:
+        - label: identifier
+          id: ChildRelation.identifier
+        - label: Patient
+          id: ChildRelation.Patient
+  rowHeight: 25
+  headerText: ChildRelation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1320
+    'y': 2340
+  id: Child
+- type: Tree
+  rows:
+    - label: IndexRelation
+      id: IndexRelation
+      rows:
+        - label: identifier
+          id: IndexRelation.identifier
+          rows:
+            - label: national_id12
+              id: IndexRelation.identifier.national_id12
+            - label: national_id9
+              id: IndexRelation.identifier.national_id9
+            - label: case_id
+              id: IndexRelation.identifier.case_id
+        - label: HIVPatient
+          id: IndexRelation.HIVPatient
+  rowHeight: 25
+  headerText: IndexRelation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 710
+    'y': 30
+  id: IndexRelation
+- type: Tree
+  rows:
+    - label: ChildBirthWeight
+      id: ChildBirthWeight
+      rows:
+        - label: subject
+          id: ChildBirthWeight.subject
+        - label: code
+          id: ChildBirthWeight.code
+        - label: valueInteger
+          id: ChildBirthWeight.valueInteger
+  rowHeight: 25
+  headerText: ChildBirthWeight
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1300
+    'y': 2140
+  id: ChildBirthWeight
+- type: Tree
+  rows:
+    - label: HIVKeyPopulation
+      id: HIVKeyPopulation
+      rows:
+        - label: category
+          id: HIVKeyPopulation.category
+  rowHeight: 25
+  headerText: HIVKeyPopulation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 820
+    'y': 1220
+  id: HIVKeyPopulation
+- type: Tree
+  rows:
+    - label: Occupation
+      id: Occupation
+      rows:
+        - label: category
+          id: Occupation.category
+  rowHeight: 25
+  headerText: Occupation
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 780
+    'y': 940
+  id: Occupation
+- type: Tree
+  rows:
+    - label: RiskBehavior
+      id: RiskBehavior
+      rows:
+        - label: category
+          id: RiskBehavior.category
+  rowHeight: 25
+  headerText: RiskBehavior
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 1470
+    'y': 1180
+  id: RiskBehavior
+- type: Tree
+  rows:
+    - label: HIVCondition
+      id: HIVCondition
+      rows:
+        - label: extension
+          id: HIVCondition.extension
+          rows:
+            - label: dueTo
+              id: HIVCondition.extension.dueTo
+        - label: identifier
+          id: HIVCondition.identifier
+  rowHeight: 25
+  headerText: HIVCondition
+  attrs:
+    header:
+      fill: '#ff9c04'
+  position:
+    x: 3100
+    'y': 1290
+  id: HIVCondition
+- type: Tree
+  rows:
+    - id: hiv-patient
+      label: HIVPatient
+      rows:
+        - label: extension
+          rows:
+            - label: ethnicity
+              id: HIVPatient.extension.ethnicity
+            - label: causeOfDeath
+              id: HIVPatient.extension.causeOfDeath
+            - label: gender_identity
+              id: HIVPatient.extension.gender_identity
+          id: HIVPatient.extension
+        - label: identifier
+          id: HIVPatient.identifier
+          rows:
+            - label: arv_nr
+              id: HIVPatient.identifier.arv_nr
+            - label: national_id12
+              id: HIVPatient.identifier.national_id12
+            - label: national_id9
+              id: HIVPatient.identifier.national_id9
+            - label: insurance_nr
+              id: HIVPatient.identifier.insurance_nr
+              rows:
+                - label: value
+                  id: HIVPatient.identifier.insurance_nr.value
+                - label: period
+                  id: HIVPatient.identifier.insurance_nr.period
+                  rows:
+                    - label: end
+                      id: HIVPatient.identifier.insurance_nr.period.end
+            - label: passport_nr
+              id: HIVPatient.identifier.passport_nr
+            - label: driver_license
+              id: HIVPatient.identifier.driver_license
+        - label: name[0]
+          rows:
+            - label: text
+              id: HIVPatient.name[0].text
+          id: HIVPatient.name[0]
+        - label: birthDate
+          id: HIVPatient.birthDate
+        - label: address[temporary]
+          rows:
+            - label: country
+              id: HIVPatient.address[temporary].country
+            - label: state
+              id: HIVPatient.address[temporary].state
+            - label: district
+              id: HIVPatient.address[temporary].district
+            - label: city
+              id: HIVPatient.address[temporary].city
+            - label: line
+              id: HIVPatient.address[temporary].line
+          id: HIVPatient.address[temporary]
+        - label: address[permanent]
+          rows:
+            - label: country
+              id: HIVPatient.address[permanent].country
+            - label: state
+              id: HIVPatient.address[permanent].state
+            - label: district
+              id: HIVPatient.address[permanent].district
+            - label: city
+              id: HIVPatient.address[permanent].city
+            - label: line
+              id: HIVPatient.address[permanent].line
+          id: HIVPatient.address[permanent]
+        - label: deceasedDateTime
+          id: HIVPatient.deceasedDateTime
+  rowHeight: 25
+  headerHeight: 50
+  headerText: "\nHIVPatient\n(Patient)"
+  attrs:
+    header:
+      height: 50
+      fill: '#ff9c04'
+  position:
+    x: 2470
+    'y': 120
+  id: HIVPatient
+- type: Tree
+  rows:
+    - id: hiv-case-report-questionnaire
+      label: HIV Case Report Questionnaire
+      rows:
+        - id: hiv-case-report-questionnaire.facility_id
+          label: Facility ID
+        - id: hiv-case-report-questionnaire.report_date
+          label: Date of report
+          icon: string
+        - id: hiv-case-report-questionnaire.questions
+          label: Monthly report
+          rows:
+            - id: hiv-case-report-questionnaire.questions.patient_identification
+              label: 'Part I: Identifying information'
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.patient_identification.patient_arv_nr
+                  label: ARV patient number
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.patient_identification.case_uid
+                  label: Case UID
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.patient_identification.index_testing
+                  label: Index testing
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_national_id12
+                      label: Link to index national id 12 digits
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_national_id9
+                      label: Link to index national id 9 digits
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.index_testing.index_case_uid
+                      label: Link to index hivinfo case id
+                      icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.patient_identification.personal_information
+                  label: Personal information
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.fullname
+                      label: Full name
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.ethnicity
+                      label: Vietnam ethnicity
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.gender
+                      label: Gender
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.birth_date
+                      label: Date of birth
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification
+                      label: Identification
+                      rows:
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.national_id12
+                          label: National ID 12 digits
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.national_id9
+                          label: National ID 9 digits
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.insurance_nr
+                          label: Health insurance number
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.insurance_exp_date
+                          label: Health insurance expiry date
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.passport_nr
+                          label: Passport number
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.identification.driver_license
+                          label: Driver license
+                          icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence
+                      label: Residence
+                      rows:
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence
+                          label: Current residence
+                          rows:
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.country
+                              label: Country
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.province
+                              label: Province
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.district
+                              label: District
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.commune
+                              label: Commune
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.current_residence.address
+                              label: Street address
+                              icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence
+                          label: Permanent residence
+                          rows:
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.country
+                              label: Country
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.province
+                              label: Province
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.district
+                              label: District
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.commune
+                              label: Commune
+                            - id: >-
+                                hiv-case-report-questionnaire.questions.patient_identification.personal_information.residence.permanent_residence.address
+                              label: Street address
+                              icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.patient_identification.personal_information.occupation
+                      label: Occupation
+              isCollapsed: false
+            - id: hiv-case-report-questionnaire.questions.risk_factors
+              label: Risk factors
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.risk_factors.population_group
+                  label: Population group
+                - id: >-
+                    hiv-case-report-questionnaire.questions.risk_factors.risk_behavior
+                  label: Risk behavior
+                - id: >-
+                    hiv-case-report-questionnaire.questions.risk_factors.transmission_route
+                  label: Transmission route
+            - id: hiv-case-report-questionnaire.questions.hiv_diagnosis
+              label: HIV diagnosis
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_diagnosis.confirmation_date
+                  label: Date of confirmation
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_diagnosis.confirming_lab
+                  label: Confirming lab
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_diagnosis.date_specimen_collected
+                  label: Date of specimen collection
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_diagnosis.place_specimen_collected
+                  label: Place of specimen collection
+            - id: hiv-case-report-questionnaire.questions.hiv_recency_test
+              label: HIV recency test
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test
+                  label: Rapid test for recent infection
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.date_specimen_collected
+                      label: Date of specimen collection
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.place_specimen_collected
+                      label: Place of specimen collection
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.date_test_performed
+                      label: Date test result validated
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.rapid_test.test_result
+                      label: Rapid test result
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test
+                  label: Viral load test specific for recency test
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.date_test_performed
+                      label: Date of recency VL test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.test_result
+                      label: VL test result (copies/mL)
+                      icon: number
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.hiv_recency_test.vl_test.test_result_other
+                      label: Other of viral load test (undetectable)
+                - id: >-
+                    hiv-case-report-questionnaire.questions.hiv_recency_test.recent_infection_conclusion
+                  label: Recent infection conclusion
+              isCollapsed: false
+            - id: hiv-case-report-questionnaire.questions.cd4_test
+              label: CD4 test results
+              rows:
+                - id: hiv-case-report-questionnaire.questions.cd4_test.test_reason
+                  label: Reason for CD4 test
+                - id: >-
+                    hiv-case-report-questionnaire.questions.cd4_test.date_specimen_collected
+                  label: Date of specimen collection for CD4 test
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.cd4_test.place_specimen_collected
+                  label: Place of specimen collection for CD4 test
+                - id: >-
+                    hiv-case-report-questionnaire.questions.cd4_test.date_test_performed
+                  label: Date of CD4 test
+                  icon: string
+                - id: hiv-case-report-questionnaire.questions.cd4_test.test_result
+                  label: Result of CD4 test
+                  icon: number
+            - id: hiv-case-report-questionnaire.questions.vl_test
+              label: Viral load test (First time and follow-up)
+              rows:
+                - id: hiv-case-report-questionnaire.questions.vl_test.test_reason
+                  label: Reason for VL test
+                - id: >-
+                    hiv-case-report-questionnaire.questions.vl_test.place_specimen_collected
+                  label: Place of Specimen Collection for viral load test
+                - id: >-
+                    hiv-case-report-questionnaire.questions.vl_test.date_specimen_collected
+                  label: Date of Specimen Collection for viral load test
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.vl_test.date_test_performed
+                  label: Date of viral load test
+                  icon: string
+                - id: hiv-case-report-questionnaire.questions.vl_test.test_result
+                  label: Result of viral load test
+                  icon: number
+                - id: >-
+                    hiv-case-report-questionnaire.questions.vl_test.test_result_other
+                  label: Result of other outcome
+            - id: hiv-case-report-questionnaire.questions.drug_resistance_test
+              label: Drug resistance test
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.drug_resistance_test.date_specimen_collected
+                  label: Date of specimen collection
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.drug_resistance_test.date_test_performed
+                  label: Date test results validated
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.drug_resistance_test.place_specimen_collected
+                  label: Place of specimen collection
+                - id: >-
+                    hiv-case-report-questionnaire.questions.drug_resistance_test.test_result
+                  label: Drug resistance test result
+            - id: hiv-case-report-questionnaire.questions.arv_treatment
+              label: ARV Treatment
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.initiation_date
+                  label: Date of ARV treatment initiation
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.initiation_facility
+                  label: Name of ARV treatment initiation facility
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.enrollment_date
+                  label: Date of ARV Treatment registration
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.enrollment_facility
+                  label: Name of ARV treatment facility
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.enrollment_type
+                  label: Reason for ARV treatment registration
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.facility_transfer_in
+                  label: Transferred-in facility (previous facility)
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.treatment_stop_date
+                  label: Date of treatment stop at facility
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.treatment_stop_reason
+                  label: Reason to stop treatment at facility
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.place_transfer_out
+                  label: Transferred-out facility (next facility)
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.date_next_appointment
+                  label: Date of next appointment
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.date_last_examination
+                  label: Date of last examination
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen
+                  label: ARV treatment regimen
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen.date_regimen_started
+                      label: Date regimen started
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen.date_regimen_stopped
+                      label: Date regimen stopped
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen.regimen_name
+                      label: Regimen name
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen.regimen_line
+                      label: Regimen line
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.arv_regimen.regimen_change_reason
+                      label: Reason to change regimen
+                - id: >-
+                    hiv-case-report-questionnaire.questions.arv_treatment.who_stage
+                  label: WHO Stage
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.who_stage.who_clinical
+                        stage
+                      label: WHO clinical stage
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.arv_treatment.who_stage.date_who_stage
+                      label: Date of WHO clinical stage
+                      icon: string
+              isCollapsed: true
+            - id: hiv-case-report-questionnaire.questions.comorbidities
+              label: Comorbidities
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.comorbidities.tuberculosis
+                  label: Tuberculosis
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tb_diagnosis_date
+                      label: TB diagnosis date
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tb_treatment
+                      label: TB treatment
+                      rows:
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tb_treatment.date_started
+                          label: TB treatment date started
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tb_treatment.date_ended
+                          label: TB treatment date ended
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tb_treatment.location
+                          label: Place TB treatment provided
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tpt
+                      label: TPT
+                      rows:
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tpt.date_started
+                          label: Date TPT started
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tpt.date_ended
+                          label: Date TPT ended
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tpt.location
+                          label: Place TPT provided
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.comorbidities.tuberculosis.tpt.tpt_completed
+                          label: TPT completed
+                - id: hiv-case-report-questionnaire.questions.comorbidities.hbv
+                  label: HBV
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.hbsag_date
+                      label: Date of HbsAg test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.hbsag_result
+                      label: Result of HbsAg test
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.diagnosis_date
+                      label: Date of diagnosis test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.diagnosis_result
+                      label: Result of diagnosis test
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.treatment_start_date
+                      label: Date of HBV treatment start
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.treatment_stop_date
+                      label: Date of HBV treatment stopped
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hbv.treatment_location
+                      label: Place HBV treatment provided
+                - id: hiv-case-report-questionnaire.questions.comorbidities.hcv
+                  label: HCV
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.anti_hcv_date
+                      label: Date of anti HCV test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.anti_hcv_result
+                      label: Result of anti HCV test
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.diagnosis_date
+                      label: Date of HCV diagnosis test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.diagnosis_result
+                      label: Result of HCV dianosis test
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.vl_diagnosis_date
+                      label: Date of HCV viral load test
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.vl_diagnosis_result
+                      label: Result of HCV viral load test
+                      icon: number
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.treatment_start_date
+                      label: Date of HCV treatment start
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.treatment_stop_date
+                      label: Date of HCV treatment stopped
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.comorbidities.hcv.treatment_location
+                      label: Place HCV treatment provided
+              isCollapsed: true
+            - id: hiv-case-report-questionnaire.questions.death
+              label: Patient death
+              rows:
+                - id: hiv-case-report-questionnaire.questions.death.date
+                  label: Date of death
+                  icon: string
+                - id: hiv-case-report-questionnaire.questions.death.cause
+                  label: Cause of death
+            - id: hiv-case-report-questionnaire.questions.pregnancy
+              label: Pregnancies
+              rows:
+                - id: >-
+                    hiv-case-report-questionnaire.questions.pregnancy.date_reported
+                  label: Date pregnancy reported
+                  icon: string
+                - id: >-
+                    hiv-case-report-questionnaire.questions.pregnancy.delivery_place
+                  label: Delivery place
+                - id: >-
+                    hiv-case-report-questionnaire.questions.pregnancy.place_reported
+                  label: Place pregnancy reported
+                - id: hiv-case-report-questionnaire.questions.pregnancy.outcomes
+                  label: Pregnancy outcome
+                  rows:
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.pregnancy.outcomes.outcome_code
+                      label: Pregnancy outcome code
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.pregnancy.outcomes.delivery_date
+                      label: Delivery date
+                      icon: string
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.pregnancy.outcomes.gestational_age_at_delivery
+                      label: Gestational age at delivery (weeks)
+                      icon: number
+                    - id: >-
+                        hiv-case-report-questionnaire.questions.pregnancy.outcomes.child
+                      label: Births
+                      rows:
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.birth_weight
+                          label: Child weight at birth
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.birth_defects
+                          label: Birth defects
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.hiv_status
+                          label: HIV status
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.hiv_diagnosis_date
+                          label: Child HIV diagnosis date
+                          icon: string
+                        - id: >-
+                            hiv-case-report-questionnaire.questions.pregnancy.outcomes.child.child_arv_start_date
+                          label: Child ARV start date
+                          icon: string
+      isCollapsed: false
+  headerText: HIVCaseReportQuestionnaire
+  autoSize: false
+  position:
+    x: 60
+    'y': 110
+  size:
+    width: 400
+  id: 72094663-8cc9-42b9-af77-af504dce6995
