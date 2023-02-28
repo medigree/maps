@@ -1,197 +1,871 @@
-- rowHeight: 25
-  headerHeight: 25
-  headerText: <a href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html">KMEHR Medication Scheme</a>
-  attrs:
-    header:
-      fill: '#003B4A'
-  position:
-    x: 200
-    'y': 35
-  id: kmehrms
-  type: Tree
-  label: KMEHRMS
+- type: Tree
   rows:
     - label: KMEHRMessage
       rows:
         - label: header
+          isCollapsed: true
           rows:
             - label: id
+              id: kmehrms.KMEHRMessage.header.id
             - label: standard
               rows:
                 - label: cd
+                  id: kmehrms.KMEHRMessage.header.standard.cd
+              id: kmehrms.KMEHRMessage.header.standard
             - label: date
+              id: kmehrms.KMEHRMessage.header.date
             - label: time
+              id: kmehrms.KMEHRMessage.header.time
             - label: sender
               rows:
                 - label: hcparty-hub
+                  isCollapsed: true
                   rows:
                     - label: id
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-hub.id
                     - label: cd
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-hub.cd
                     - label: name
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-hub.name
+                  id: kmehrms.KMEHRMessage.header.sender.hcparty-hub
                 - label: hcparty-org
+                  isCollapsed: true
                   rows:
                     - label: id
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-org.id
                     - label: cd
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-org.cd
                     - label: name
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-org.name
+                  id: kmehrms.KMEHRMessage.header.sender.hcparty-org
                 - label: hcparty-individual
+                  isCollapsed: true
                   rows:
                     - label: id-riziv
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-riziv
                     - label: id-inss
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-inss
+                    - label: id-encryptionActor
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-encryptionActor
                     - label: cd
+                      id: kmehrms.KMEHRMessage.header.sender.hcparty-individual.cd
+                    - label: cd-encryptionActor
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.cd-encryptionActor
                     - label: firstname
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.firstname
                     - label: familyname
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.familyname
+                    - label: address
+                      rows:
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.header.sender.hcparty-individual.address.cd
+                        - label: nis
+                          id: >-
+                            kmehrms.KMEHRMessage.header.sender.hcparty-individual.address.nis
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.address
+                    - label: telecom
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-individual.telecom
+                  id: kmehrms.KMEHRMessage.header.sender.hcparty-individual
+                - label: hcparty-application
+                  rows:
+                    - label: id
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-application.id
+                    - label: cd
+                      id: >-
+                        kmehrms.KMEHRMessage.header.sender.hcparty-application.cd
+                  id: kmehrms.KMEHRMessage.header.sender.hcparty-application
+              id: kmehrms.KMEHRMessage.header.sender
             - label: recipient
               rows:
                 - label: hcparty-hub
+                  isCollapsed: true
                   rows:
                     - label: id
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-hub.id
                     - label: cd
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-hub.cd
                     - label: name
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-hub.name
+                  id: kmehrms.KMEHRMessage.header.recipient.hcparty-hub
                 - label: hcparty-org
+                  isCollapsed: true
                   rows:
                     - label: id
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-org.id
                     - label: cd
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-org.cd
                     - label: name
+                      id: kmehrms.KMEHRMessage.header.recipient.hcparty-org.name
+                  id: kmehrms.KMEHRMessage.header.recipient.hcparty-org
                 - label: hcparty-individual
+                  isCollapsed: true
                   rows:
                     - label: id-riziv
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-riziv
                     - label: id-inss
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-inss
+                    - label: id-encryptionActor
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-encryptionActor
                     - label: cd
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.cd
+                    - label: cd-encryptionActor
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.cd-encryptionActor
                     - label: firstname
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.firstname
                     - label: familyname
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.familyname
+                    - label: address
+                      rows:
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address.cd
+                        - label: nis
+                          id: >-
+                            kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address.nis
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address
+                    - label: telecom
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-individual.telecom
+                  id: kmehrms.KMEHRMessage.header.recipient.hcparty-individual
+                - label: hcparty-application
+                  rows:
+                    - label: id
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-application.id
+                    - label: cd
+                      id: >-
+                        kmehrms.KMEHRMessage.header.recipient.hcparty-application.cd
+                  id: kmehrms.KMEHRMessage.header.recipient.hcparty-application
+              id: kmehrms.KMEHRMessage.header.recipient
+          id: kmehrms.KMEHRMessage.header
         - label: folder
           rows:
             - label: id-kmehr
+              id: kmehrms.KMEHRMessage.folder.id-kmehr
             - label: patient
-
+              isCollapsed: true
+              rows:
+                - label: id-inss
+                  id: kmehrms.KMEHRMessage.folder.patient.id-inss
+                - label: firstname
+                  id: kmehrms.KMEHRMessage.folder.patient.firstname
+                - label: familyname
+                  id: kmehrms.KMEHRMessage.folder.patient.familyname
+                - label: birthdate
+                  id: kmehrms.KMEHRMessage.folder.patient.birthdate
+                - label: deathdate
+                  id: kmehrms.KMEHRMessage.folder.patient.deathdate
+                - label: sex
+                  rows:
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.patient.sex.cd
+                  id: kmehrms.KMEHRMessage.folder.patient.sex
+                - label: address
+                  rows:
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.patient.address.cd
+                    - label: zip
+                      id: kmehrms.KMEHRMessage.folder.patient.address.zip
+                    - label: city
+                      id: kmehrms.KMEHRMessage.folder.patient.address.city
+                    - label: street
+                      id: kmehrms.KMEHRMessage.folder.patient.address.street
+                    - label: housenumber
+                      id: kmehrms.KMEHRMessage.folder.patient.address.housenumber
+                  id: kmehrms.KMEHRMessage.folder.patient.address
+                - label: nationality
+                  rows:
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.patient.nationality.cd
+                  id: kmehrms.KMEHRMessage.folder.patient.nationality
+                - label: usuallanguage
+                  id: kmehrms.KMEHRMessage.folder.patient.usuallanguage
+                - label: telecom
+                  id: kmehrms.KMEHRMessage.folder.patient.telecom
+                - label: recorddatetime
+                  id: kmehrms.KMEHRMessage.folder.patient.recorddatetime
+                - label: text
+                  id: kmehrms.KMEHRMessage.folder.patient.text
+              id: kmehrms.KMEHRMessage.folder.patient
             - label: MSTransaction
               rows:
+                - label: id-kmehr
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.id-kmehr
                 - label: id-others
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.id-others
                 - label: cd
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.cd
                 - label: date
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.date
                 - label: time
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.time
                 - label: author
                   rows:
                     - label: hcparty-hub
+                      isCollapsed: true
                       rows:
                         - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.id
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.cd
                         - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub
                     - label: hcparty-org
+                      isCollapsed: true
                       rows:
                         - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.id
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.cd
                         - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org
                     - label: hcparty-individual
+                      isCollapsed: true
                       rows:
                         - label: id-riziv
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-riziv
                         - label: id-inss
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-inss
+                        - label: id-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-encryptionActor
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.cd
+                        - label: cd-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.cd-encryptionActor
                         - label: firstname
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.firstname
                         - label: familyname
-                - label: isComplete
-                - label: isValidated
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.familyname
+                        - label: address
+                          rows:
+                            - label: cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address.cd
+                            - label: nis
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address.nis
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address
+                        - label: telecom
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.telecom
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual
+                    - label: hcparty-application
+                      rows:
+                        - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application.id
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.author
+                - label: <s>isComplete
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.isComplete
+                - label: <s>isValidated
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.isValidated
                 - label: version
-            - label: MSETransaction
+                  id: kmehrms.KMEHRMessage.folder.MSTransaction.version
+              id: kmehrms.KMEHRMessage.folder.MSTransaction
+            - label: MSETransaction-medication
               rows:
                 - label: id-kmehr
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-kmehr
                 - label: id-other
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-other
                 - label: cd
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.cd
                 - label: date
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.date
                 - label: time
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.time
                 - label: author
                   rows:
                     - label: hcparty-hub
+                      isCollapsed: true
                       rows:
                         - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.id
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.cd
                         - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub
                     - label: hcparty-org
+                      isCollapsed: true
                       rows:
                         - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.id
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.cd
                         - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org
                     - label: hcparty-individual
+                      isCollapsed: true
                       rows:
                         - label: id-riziv
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-riziv
                         - label: id-inss
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-inss
+                        - label: id-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-encryptionActor
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.cd
+                        - label: cd-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.cd-encryptionActor
                         - label: firstname
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.firstname
                         - label: familyname
-                - label: isComplete
-                - label: isValidated
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.familyname
+                        - label: address
+                          rows:
+                            - label: cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address.cd
+                            - label: nis
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address.nis
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address
+                        - label: telecom
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.telecom
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual
+                    - label: hcparty-application
+                      rows:
+                        - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application.id
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.author
+                - label: <s>isComplete
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.isComplete
+                - label: <s>isValidated
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.isValidated
                 - label: version
-                - label: item
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.version
+                - label: item-medicationUse
                   rows:
                     - label: id
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.id
                     - label: cd
-                    - label: medicationUse
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.cd
+                    - label: content-category
+                      rows:
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-category.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-category
+                    - label: content-text
+                      rows:
+                        - label: text
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-text.text
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-text
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse
+                - label: item-medication
+                  rows:
+                    - label: id
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.id
+                    - label: cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.cd
                     - label: beginMoment
+                      rows:
+                        - label: date
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment.date
+                        - label: time
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment.time
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment
                     - label: endMoment
+                      rows:
+                        - label: date
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment.date
+                        - label: time
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment.time
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment
                     - label: duration
-                    - label: content
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.duration
+                    - label: content-medicationIdentification
                       rows:
                         - label: medicinalproduct
                           rows:
                             - label: intendedName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedName
                             - label: intendedCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedCd
                             - label: deliveredName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.deliveredName
                             - label: deliveredCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.deliveredCd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct
                         - label: substanceproduct
                           rows:
                             - label: intendedName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedName
                             - label: intendedCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedCd
                             - label: deliveredName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.deliveredName
                             - label: deliveredCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.deliveredCd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct
                         - label: compoundprescription
                           rows:
-                            - label: compoundprescription
-                            - label: name
                             - label: magistraltext
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.magistraltext
+                            - label: <s>compound
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.compound
+                            - label: <s>formularyReference
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.formularyReference
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification
+                    - label: content
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content
                     - label: text
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.text
                     - label: temporality
                       rows:
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.temporality.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.temporality
                     - label: frequency
                       rows:
                         - label: periodicity
                           rows:
                             - label: cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency.periodicity.cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency.periodicity
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency
                     - label: posology
                       rows:
                         - label: text
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.text
+                        - label: <s>low
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.low
+                        - label: <s>high
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.high
+                        - label: <s>unit
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.unit
+                        - label: <s>takes
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.takes
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology
                     - label: regimen
                       rows:
                         - label: date
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.date
                         - label: weekday
                           rows:
                             - label: cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday.cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday
                         - label: daynumber
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daynumber
                         - label: daytime
                           rows:
                             - label: time
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.time
                             - label: dayperiod
                               rows:
                                 - label: cd
+                                  id: >-
+                                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod.cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime
                         - label: quantity
                           rows:
                             - label: decimal
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.decimal
                             - label: unit
                               rows:
                                 - label: cd
+                                  id: >-
+                                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit.cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen
                     - label: route
                       rows:
                         - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route
+                    - label: <s>instructionForOverDosing
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForOverDosing
+                    - label: <s>instructionForReimbursement
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForReimbursement
+                    - label: <s>isSubstitutionAllowed
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.isSubstitutionAllowed
+                    - label: <s>feedback
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.feedback
+                    - label: <s>local
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.local
+                    - label: <s>batch
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.batch
+                    - label: <s>deliveryDate
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.deliveryDate
                     - label: instructionforpatient
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication
+              id: kmehrms.KMEHRMessage.folder.MSETransaction-medication
+            - label: MSETransaction-treatmentSuspension
+              rows:
+                - label: id-kmehr
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-kmehr
+                - label: id-other
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-other
+                - label: cd
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.cd
+                - label: date
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.date
+                - label: time
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.time
+                - label: author
+                  rows:
+                    - label: hcparty-hub
+                      isCollapsed: true
+                      rows:
+                        - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.id
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.cd
+                        - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub
+                    - label: hcparty-org
+                      isCollapsed: true
+                      rows:
+                        - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.id
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.cd
+                        - label: name
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.name
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org
+                    - label: hcparty-individual
+                      isCollapsed: true
+                      rows:
+                        - label: id-riziv
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-riziv
+                        - label: id-inss
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-inss
+                        - label: id-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-encryptionActor
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.cd
+                        - label: cd-encryptionActor
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.cd-encryptionActor
+                        - label: firstname
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.firstname
+                        - label: familyname
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.familyname
+                        - label: address
+                          rows:
+                            - label: cd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address.cd
+                            - label: nis
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address.nis
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address
+                        - label: telecom
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.telecom
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual
+                    - label: hcparty-application
+                      rows:
+                        - label: id
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application.id
+                        - label: cd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application.cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author
+                - label: <s>isComplete
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.isComplete
+                - label: <s>isValidated
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.isValidated
+                - label: item-transactionreason
+                  rows:
+                    - label: id
+                      id: kmehrms.KMEHRMessage.folder.item-transactionreason.id
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.item-transactionreason.cd
+                    - label: content-text
                       rows:
                         - label: text
-                    - label: transactionreason
-
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.item-transactionreason.content-text.text
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.item-transactionreason.content-text
+                  id: kmehrms.KMEHRMessage.folder.item-transactionreason
+                - label: item-medication
+                  rows:
+                    - label: id
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.id
+                    - label: cd
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.cd
+                    - label: beginMoment
+                      rows:
+                        - label: date
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment.date
+                        - label: time
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment.time
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment
+                    - label: endMoment
+                      rows:
+                        - label: date
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment.date
+                        - label: time
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment.time
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment
+                    - label: content
+                      rows:
+                        - label: medicinalproduct
+                          rows:
+                            - label: intendedName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.intendedName
+                            - label: intendedCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.intendedCd
+                            - label: deliveredName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.deliveredName
+                            - label: deliveredCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.deliveredCd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct
+                        - label: substanceproduct
+                          rows:
+                            - label: intendedName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.intendedName
+                            - label: intendedCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.intendedCd
+                            - label: deliveredName
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.deliveredName
+                            - label: deliveredCd
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.deliveredCd
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct
+                        - label: compoundprescription
+                          rows:
+                            - label: magistraltext
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.magistraltext
+                            - label: compound
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.compound
+                            - label: formularyReference
+                              id: >-
+                                kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.formularyReference
+                          id: >-
+                            kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content
+                    - label: text
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.text
+                    - label: lifecycle
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.lifecycle
+                    - label: lnk
+                      id: >-
+                        kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.lnk
+                  id: >-
+                    kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication
+              id: kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension
+          id: kmehrms.KMEHRMessage.folder
+      id: kmehrms.KMEHRMessage
+  rowHeight: 25
+  headerHeight: 25
+  headerText: >-
+    <a
+    href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html">KMEHR
+    Medication Scheme</a>
+  attrs:
+    header:
+      fill: '#003B4A'
+    headerLabel:
+      html: >-
+        <a
+        href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html"
+        target="_blank">KMEHR Medication Scheme</a>
+  position:
+    x: 200
+    'y': 25
+  id: kmehrms
+  label: KMEHRMS
 
 
 - type: Transform
   group: g1
-  rowHeight: 30
+  rowHeight: 25
   headerText: <a href="#temporality">Temporality</a>
   attrs:
     header:
@@ -205,7 +879,7 @@
   rightRows:
     - label: (New)
 - type: Transform
-  rowHeight: 30
+  rowHeight: 25
   headerText: Periodicity
   attrs:
     header:
@@ -219,7 +893,7 @@
     - label: (New)
   id: f58fe9a8-9029-4313-9a2c-a3c17874e215
 - type: Transform
-  rowHeight: 30
+  rowHeight: 25
   headerText: DayPeriod
   attrs:
     header:
@@ -234,7 +908,7 @@
   id: f7b79056-af23-4c34-8a49-3fe76e0639ff
 
 - type: Transform
-  rowHeight: 30
+  rowHeight: 25
   headerText: AdministrationUnit
   attrs:
     header:
@@ -247,5 +921,20 @@
   rightRows:
     - label: BeVSRoutesOfAdministration
   id: 675d8d61-f231-4ab3-afdb-aa4adfc60096
+
+
+- type: Transform
+  rowHeight: 25
+  headerText: Patient Sex
+  attrs:
+    header:
+      fill: '#cfc615'
+  position:
+    x: 1035
+    'y': 940
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>SEX</a>
+  rightRows:
+    - label: BeVSSex
 
 

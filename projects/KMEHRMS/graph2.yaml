@@ -2,211 +2,245 @@
   rows:
     - label: Bundle
       rows:
-        - label: Composition 1..1
+        - label: Composition
           rows:
             - label: identifier
-              id: fhirms.Bundle.Composition 1..1.identifier
+              id: fhirms.Bundle.Composition.identifier
             - label: date
-              id: fhirms.Bundle.Composition 1..1.date
+              id: fhirms.Bundle.Composition.date
             - label: author
               isCollapsed: true
               rows:
                 - label: author[Organization]
                   rows:
                     - label: display
-                      id: >-
-                        fhirms.Bundle.Composition
-                        1..1.author.author[Organization].display
+                      id: fhirms.Bundle.Composition.author.author[Organization].display
                     - label: identifier
                       rows:
                         - label: type
-                          id: >-
-                            fhirms.Bundle.Composition
-                            1..1.author.author[Organization].identifier.type
+                          id: fhirms.BundleComposition.author.author[Organization].identifier.type
                         - label: value
-                          id: >-
-                            fhirms.Bundle.Composition
-                            1..1.author.author[Organization].identifier.value
-                      id: >-
-                        fhirms.Bundle.Composition
-                        1..1.author.author[Organization].identifier
-                  id: fhirms.Bundle.Composition 1..1.author.author[Organization]
+                          id: fhirms.BundleComposition.author.author[Organization].identifier.value
+                      id: fhirms.Bundle.Composition.author.author[Organization].identifier
+                  id: fhirms.Bundle.Composition.author.author[Organization]
                 - label: author[Practitioner]
                   rows:
                     - label: display
-                      id: >-
-                        fhirms.Bundle.Composition
-                        1..1.author.author[Practitioner].display
+                      id: fhirms.Bundle.Composition.author.author[Practitioner].display
                     - label: reference(Practitioner)
                       rows:
-                        - label: <b>identifier
-                          id: >-
-                            fhirms.Bundle.Composition
-                            1..1.author.author[Practitioner].reference(Practitioner).<b>identifier
+                        - label: identifier
+                          id: fhirms.BundleComposition.author.author[Practitioner].reference(Practitioner).identifier
                         - label: name
                           rows:
                             - label: text
-                              id: >-
-                                fhirms.Bundle.Composition
-                                1..1.author.author[Practitioner].reference(Practitioner).name.text
-                            - label: <b>family 1..1
-                              id: >-
-                                fhirms.Bundle.Composition
-                                1..1.author.author[Practitioner].reference(Practitioner).name.<b>family
-                                1..1
-                            - label: <b>given 1..1
-                              id: >-
-                                fhirms.Bundle.Composition
-                                1..1.author.author[Practitioner].reference(Practitioner).name.<b>given
-                                1..1
-                          id: >-
-                            fhirms.Bundle.Composition
-                            1..1.author.author[Practitioner].reference(Practitioner).name
-                      id: >-
-                        fhirms.Bundle.Composition
-                        1..1.author.author[Practitioner].reference(Practitioner)
-                  id: fhirms.Bundle.Composition 1..1.author.author[Practitioner]
-              id: fhirms.Bundle.Composition 1..1.author
-            - label: status 1..1
-              id: fhirms.Bundle.Composition 1..1.status 1..1
-          id: fhirms.Bundle.Composition 1..1
-        - label: Patient 1..1
-          isCollapsed: false
+                              id: fhirms.Bundle.Composition.author.author[Practitioner].reference(Practitioner).name.text
+                            - label: family
+                              id: fhirms.Bundle.Composition.author.author[Practitioner].reference(Practitioner).name.family
+                            - label: given
+                              id: fhirms.Bundle.Composition.author.author[Practitioner].reference(Practitioner).name.given
+                          id: fhirms.BundleComposition.author.author[Practitioner].reference(Practitioner).name
+                      id: fhirms.Bundle.Composition.author.author[Practitioner].reference(Practitioner)
+                  id: fhirms.Bundle.Composition.author.author[Practitioner]
+              id: fhirms.Bundle.Composition.author
+            - label: status
+              id: fhirms.Bundle.Composition.status
+          id: fhirms.Bundle.Composition
+        - label: Patient
+          isCollapsed: true
           rows:
-            - label: <b>identifier
-              id: fhirms.Bundle.Patient 1..1.<b>identifier
+            - label: identifier-niss
+              id: fhirms.Bundle.Patient.identifier-niss
+            - label: identifier
+              id: fhirms.Bundle.Patient.identifier
             - label: name
               rows:
-                - label: <b>family 1..1
-                  id: fhirms.Bundle.Patient 1..1.name.<b>family 1..1
-                - label: <b>given 1..1
-                  id: fhirms.Bundle.Patient 1..1.name.<b>given 1..1
-              id: fhirms.Bundle.Patient 1..1.name
+                - label: family
+                  id: fhirms.Bundle.Patient.name.family
+                - label: given
+                  id: fhirms.Bundle.Patient.name.given
+              id: fhirms.Bundle.Patient.name
             - label: gender
-              id: fhirms.Bundle.Patient 1..1.gender
+              id: fhirms.Bundle.Patient.gender
               rows:
               - label: changed
-                id: fhirms.Bundle.Patient 1..1.genderchanged
+                id: fhirms.Bundle.Patient.genderchanged
             - label: birthDate
-              id: fhirms.Bundle.Patient 1..1.birthDate
+              id: fhirms.Bundle.Patient.birthDate
             - label: address
               rows:
                 - label: line
-                  id: fhirms.Bundle.Patient 1..1.address.line
+                  id: fhirms.Bundle.Patient.address.line
                 - label: city
-                  id: fhirms.Bundle.Patient 1..1.address.city
+                  id: fhirms.Bundle.Patient.address.city
                 - label: postalCode
-                  id: fhirms.Bundle.Patient 1..1.address.postalCode
+                  id: fhirms.Bundle.Patient.address.postalCode
                 - label: country
-                  id: fhirms.Bundle.Patient 1..1.address.country
-              id: fhirms.Bundle.Patient 1..1.address
-          id: fhirms.Bundle.Patient 1..1
-        - label: MedicationTreatmentLine 0..*
+                  id: fhirms.Bundle.Patient.address.country
+              id: fhirms.Bundle.Patient.address
+          id: fhirms.Bundle.Patient
+        - label: MedicationTreatmentLine
           rows:
             - label: identifier
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.identifier
+              id: fhirms.Bundle.MedicationTreatmentLine.identifier
             - label: category
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.category
+              id: fhirms.Bundle.MedicationTreatmentLine.category
             - label: medication[CodeableConcept]
               rows:
                 - label: coding
                   rows:
                     - label: system
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.medication[CodeableConcept].coding.system
+                      id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.system
                     - label: code
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.medication[CodeableConcept].coding.code
+                      id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.code
                     - label: display
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.medication[CodeableConcept].coding.display
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.medication[CodeableConcept].coding
+                      id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.display
+                  id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding
                 - label: text
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.medication[CodeableConcept].text
-              id: >-
-                fhirms.Bundle.MedicationTreatmentLine
-                0..*.medication[CodeableConcept]
+                  id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].text
+              id: fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept]
             - label: medication[Reference]
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.medication[Reference]
+              id: fhirms.Bundle.MedicationTreatmentLine.medication[Reference]
             - label: effectiveDateTime
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.effectiveDateTime
+              id: fhirms.Bundle.MedicationTreatmentLine.effectiveDateTime
             - label: effectivePeriod
               rows:
                 - label: beginDate
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.effectivePeriod.beginDate
+                  id: fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.beginDate
                 - label: endDate
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.effectivePeriod.endDate
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.effectivePeriod
+                  id: fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.endDate
+              id: fhirms.Bundle.MedicationTreatmentLine.effectivePeriod
+            - label: effectiveTiming
+              rows:
+                - label: duration
+                - label: durationUnit
+                - label: period
+                - label: periodUnit
+                - label: dayOfWeek
+                - label: offset
+              id: fhirms.Bundle.MedicationTreatmentLine.effectiveTiming
+            - label: dateAsserted
+              id: fhirms.Bundle.MedicationTreatmentLine.dateAsserted
+            - label: informationSource
+              id: fhirms.Bundle.MedicationTreatmentLine.informationSource
+            - label: derivedFrom
+              id: fhirms.Bundle.MedicationTreatmentLine.derivedFrom
+            - label: reason
+              id: fhirms.Bundle.MedicationTreatmentLine.reason
             - label: dosage
               rows:
                 - label: text
-                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.text
+                  id: fhirms.Bundle.MedicationTreatmentLine.dosage.text
                 - label: timing
                   rows:
-                    - label: period
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.timing.period
-                    - label: periodUnit
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.timing.periodUnit
-                    - label: code
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.timing.code
                     - label: repeat
                       rows:
+                        - label: duration
+                        - label: durationUnit
+                        - label: period
+                        - label: periodUnit
+                        - label: code
+                        - label: dayOfWeek
                         - label: when+
-                          id: >-
-                            fhirms.Bundle.MedicationTreatmentLine
-                            0..*.dosage.timing.repeat.when+
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.timing.repeat
-                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.timing
+                        - label: offset
+                      id: fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat
                 - label: route
                   rows:
                     - label: coding
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.route.coding
-                  id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.route
+                      id: fhirms.Bundle.MedicationTreatmentLine.dosage.route.coding
+                  id: fhirms.Bundle.MedicationTreatmentLine.dosage.route
                 - label: doseAndRate
                   rows:
                     - label: doseQuantity
                       rows:
                         - label: value
-                          id: >-
-                            fhirms.Bundle.MedicationTreatmentLine
+                          id: fhirms.Bundle.MedicationTreatmentLine
                             0..*.dosage.doseAndRate.doseQuantity.value
                         - label: code
-                          id: >-
-                            fhirms.Bundle.MedicationTreatmentLine
+                          id: fhirms.Bundle.MedicationTreatmentLine
                             0..*.dosage.doseAndRate.doseQuantity.code
-                      id: >-
-                        fhirms.Bundle.MedicationTreatmentLine
-                        0..*.dosage.doseAndRate.doseQuantity
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.dosage.doseAndRate
+                      id: fhirms.Bundle.MedicationTreatmentLine.dosage.doseAndRate.doseQuantity
+                  id: fhirms.Bundle.MedicationTreatmentLine.dosage.doseAndRate
                 - label: patientInstruction
-                  id: >-
-                    fhirms.Bundle.MedicationTreatmentLine
-                    0..*.dosage.patientInstruction
-              id: fhirms.Bundle.MedicationTreatmentLine 0..*.dosage
-          id: fhirms.Bundle.MedicationTreatmentLine 0..*
+                  id: fhirms.Bundle.MedicationTreatmentLine.dosage.patientInstruction
+              id: fhirms.Bundle.MedicationTreatmentLine.dosage
+            - label: adherence
+              rows:
+                - label: code
+                - label: reason
+          id: fhirms.Bundle.MedicationTreatmentLine
+        - label: MedicationTreatmentSuspensionLine
+          rows:
+            - label: identifier
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.identifier
+            - label: category
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.category
+            - label: medication[CodeableConcept]
+              rows:
+                - label: coding
+                  rows:
+                    - label: system
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.system
+                    - label: code
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.code
+                    - label: display
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.display
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding
+                - label: text
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].text
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept]
+            - label: medication[Reference]
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[Reference]
+            - label: effectiveDateTime
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.effectiveDateTime
+            - label: effectivePeriod
+              rows:
+                - label: beginDate
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.effectivePeriod.beginDate
+                - label: endDate
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.effectivePeriod.endDate
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.effectivePeriod
+            - label: informationSource
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.informationSource
+            - label: dosage
+              rows:
+                - label: text
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.text
+                - label: timing
+                  rows:
+                    - label: period
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing.period
+                    - label: periodUnit
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing.periodUnit
+                    - label: code
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing.code
+                    - label: repeat
+                      rows:
+                        - label: when+
+                          id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing.repeat.when+
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing.repeat
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.timing
+                - label: route
+                  rows:
+                    - label: coding
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.route.coding
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.route
+                - label: doseAndRate
+                  rows:
+                    - label: doseQuantity
+                      rows:
+                        - label: value
+                          id: fhirms.Bundle.MedicationTreatmentSuspensionLine
+                            0..*.dosage.doseAndRate.doseQuantity.value
+                        - label: code
+                          id: fhirms.Bundle.MedicationTreatmentSuspensionLine
+                            0..*.dosage.doseAndRate.doseQuantity.code
+                      id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.doseAndRate.doseQuantity
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.doseAndRate
+                - label: patientInstruction
+                  id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.patientInstruction
+              id: fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage
+          id: fhirms.Bundle.MedicationTreatmentSuspensionLine
       id: fhirms.Bundle
   rowHeight: 25
   headerHeight: 20
@@ -216,7 +250,7 @@
       fill: '#EE4B4A'
   position:
     x: 1600
-    'y': 320
+    'y': 25
   id: fhirms
 
 
