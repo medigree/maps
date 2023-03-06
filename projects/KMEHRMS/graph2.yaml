@@ -254,4 +254,60 @@
   id: fhirms
 
 
+- type: Tree
+  label: VIDISMedicationSchema
+  rows:
+    - label: MedicationSchema
+      rows:
+        - label: identifier
+        - label: type
+        - label: author
+        - label: version
+        - label: patient
+        - label: medicationLine
+          rows:
+            - label: uniqueID
+            - label: status
+            - label: statusReason
+            - label: recorder
+            - label: recordedDate
+            - label: originType
+            - label: product
+              rows:
+                - label: productCode
+                - label: product
+            - label: treatmentTime
+              rows:
+                - label: period
+                  rows:
+                    - label: startDate
+                    - label: endDate
+                - label: duration
+            - label: medType
+            - label: relatedCondition
+              rows:
+                - label: conditionCode
+                - label: conditionReference
+            - label: periodicity
+            - label: dosageAmount
+            - label: dayPeriod
+            - label: route
+            - label: instruction
+            - label: note
+            - label: reaction
+              rows:
+                - label: date
+                - label: type
+            - label: indication
+            - label: permission-consent
+  rowHeight: 25
+  headerHeight: 20
+  headerText: <a href="https://hl7-be.github.io/kmehrms/StructureDefinition-VIDISMedicationSchema">VIDIS Medication Scheme</a>
+  attrs:
+    header:
+      fill: '#EE4B4A'
+  position:
+    x: 2400
+    'y': 50
+  id: vidisms
 

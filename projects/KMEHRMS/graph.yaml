@@ -7,6 +7,8 @@
           rows:
             - label: id
               id: kmehrms.KMEHRMessage.header.id
+              comments: This is a comment
+              requirements: Requirement
             - label: standard
               rows:
                 - label: cd
@@ -846,7 +848,9 @@
   headerHeight: 25
   headerText: >-
     <a
-    href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html">KMEHR
+    href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html"
+    title="This is a representation 
+        of the KMEHR Medication Schema">KMEHR
     Medication Scheme</a>
   attrs:
     header:
@@ -854,7 +858,9 @@
     headerLabel:
       html: >-
         <a
-        href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html"
+        href="https://costateixeira.github.io/kmehrms/StructureDefinition-KMEHRMS.html" 
+        title="This is a representation 
+        of the KMEHR Medication Schema"
         target="_blank">KMEHR Medication Scheme</a>
   position:
     x: 200
@@ -925,16 +931,22 @@
 
 - type: Transform
   rowHeight: 25
-  headerText: Patient Sex
+  headerText: Sex
   attrs:
     header:
       fill: '#cfc615'
+    headerLabel:
+      html: Sex
   position:
-    x: 1035
-    'y': 940
+    x: 1025
+    'y': 325
   leftRows:
-    - label: <a target=\"_blank\" href='#'>SEX</a>
+    - label: CD-SEXvalues
+      id: Sex.l.CD-SEXvalues
   rightRows:
-    - label: BeVSSex
-
-
+    - label: gender
+      id: Sex.r.gender
+    - label: changed
+      id: Sex.r.changed
+  id: Sex
+  group: undefined
