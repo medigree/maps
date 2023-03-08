@@ -1,0 +1,222 @@
+- type: Transform
+  rowHeight: 25
+  headerText: <a href="#temporality">Temporality</a>
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: <a href="#temporality">Temporality</a>
+  position:
+    x: 1030
+    'y': 850
+  group: g1
+  id: transformShape
+  leftRows:
+    - label: <a href="#tab2">TEMPORALITY</a>
+  rightRows:
+    - label: (New)
+
+- type: Transform
+  rowHeight: 25
+  headerText: ItemType
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: ItemType
+  position:
+    x: 1075
+    'y': 635
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-ITEM</a>
+  rightRows:
+    - label: ItemType
+  id: eb3a4efc-2fae-4a90-a6be-b3441debe50e
+
+- type: Transform
+  rowHeight: 25
+  headerText: TransactionType
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: TransactionType
+  position:
+    x: 1060
+    'y': 55
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-TRANSACTION</a>
+  rightRows:
+    - label: TransactionType
+  id: 78b6f308-8e38-465c-8b93-cf4ed6a822ab
+
+- type: Transform
+  rowHeight: 25
+  headerText: LifeCycle
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: LifeCycle
+  position:
+    x: 970
+    'y': 935
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-LIFECYCLE</a>
+  rightRows:
+    - label: MedicationLineStatus
+  id: f47627d6-04e7-42d8-a2e9-8501839d4674
+
+- type: Transform
+  rowHeight: 25
+  headerText: DayPeriod
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: DayPeriod
+  position:
+    x: 965
+    'y': 1045
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-DAYPERIOD</a>
+  rightRows:
+    - label: TimeOfDay
+  id: 0da2c9f9-5b2e-4b24-adc5-98d92ca91f92
+
+- type: Transform
+  rowHeight: 25
+  headerText: AdministrationUnit
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: AdministrationUnit
+  position:
+    x: 855
+    'y': 1145
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-ADMINISTRATIONUNIT</a>
+  rightRows:
+    - label: UnitOfAdministration
+  id: d387ede0-514d-4278-aa6f-b52990cfa230
+
+- type: Transform
+  rowHeight: 25
+  headerText: RouteOfAdministration
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: RouteOfAdministration
+  position:
+    x: 840
+    'y': 1240
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-DRUG-ROUTE</a>
+  rightRows:
+    - label: BeVSRouteOfAdministration
+  id: 0f2a3f49-a4db-4d41-947d-548789854628
+
+- type: Transform
+  rowHeight: 25
+  headerText: Country
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: Country
+  position:
+    x: 1045
+    'y': 435
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-FED-COUNTRY</a>
+  rightRows:
+    - label: CountryCode
+  id: 436360e7-81f1-4d0c-a132-886822220a9f
+
+- type: Transform
+  rowHeight: 25
+  headerText: AddressCode
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: AddressCode
+  position:
+    x: 1045
+    'y': 545
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-ADDRESS</a>
+  rightRows:
+    - label: AddressCode
+  id: f3679c5e-69ac-4b5e-88b1-8fbd332dae38
+
+- type: Transform
+  rowHeight: 25
+  headerText: MSItemType
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: MSItemType
+  position:
+    x: 940
+    'y': 1440
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-ITEM-MS</a>
+  rightRows:
+    - label: MSLineType
+  id: a9ce47ad-6a51-4ea7-8c59-c0193b6962a2
+
+- type: Transform
+  rowHeight: 25
+  headerText: Periodicity
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: Periodicity
+  position:
+    x: 900
+    'y': 1345
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-PERIODICITY</a>
+  rightRows:
+    - label: Fequency
+  id: 35b66dba-7acb-41a8-9477-932d87dfada0
+
+- type: Transform
+  rowHeight: 25
+  headerText: WeekDay
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: WeekDay
+  position:
+    x: 955
+    'y': 1870
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>CD-WEEKDAY</a>
+  rightRows:
+    - label: DayOfWeek
+  id: 28a774a6-420e-4a71-9068-2c1e16c7ed63
+  
+- type: Transform
+  rowHeight: 25
+  headerText: Patient Sex
+  attrs:
+    header:
+      fill: '#cfc615'
+    headerLabel:
+      html: Patient Sex
+  position:
+    x: 1080
+    'y': 325
+  leftRows:
+    - label: <a target=\"_blank\" href='#'>SEX</a>
+  rightRows:
+    - label: BeVSSex
+    - label: changed
+  id: 59b5c4aa-2f85-407a-908e-7881f3dc9984
