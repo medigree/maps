@@ -35,9 +35,6 @@ kmehrms.KMEHRMessage.folder.item-transactionreason.cd,fhirms.adherence.code,,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient,fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.patientInstruction,,
 kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-kmehr,fhirms.Bundle.MedicationTreatmentSuspensionLine.identifier,,
 kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-other,fhirms.Bundle.MedicationTreatmentSuspensionLine.identifier,,
-kmehrms.KMEHRMessage.folder.patient.sex.cd,Sex.l.CD-SEXvalues,,
-Sex.r.gender,fhirms.Bundle.Patient.gender,,ok
-Sex.r.changed,fhirms.Bundle.Patient.genderchanged,,draft
 fhirms.Bundle.Composition.identifier,vidisms.MedicationSchema.identifier,,
 fhirms.Bundle.Composition.author,vidisms.MedicationSchema.author,,
 fhirms.Bundle.MedicationTreatmentLine.identifier,vidisms.MedicationSchema.medicationLine.uniqueID,,
