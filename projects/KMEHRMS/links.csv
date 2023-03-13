@@ -1,52 +1,314 @@
-source.,target.,label,color
-kmehrms.KMEHRMessage.folder.patient.id-inss,fhirms.Bundle.Patient.identifier-niss,,ok
-kmehrms.KMEHRMessage.folder.patient.firstname,fhirms.Bundle.Patient.name.given,,ok
-kmehrms.KMEHRMessage.folder.patient.familyname,fhirms.Bundle.Patient.name.family,,ok
-kmehrms.KMEHRMessage.folder.patient.birthdate,fhirms.Bundle.Patient.birthDate,,
-kmehrms.KMEHRMessage.folder.patient.address.zip,fhirms.Bundle.Patient.address.postalCode,,
-kmehrms.KMEHRMessage.folder.patient.address.city,fhirms.Bundle.Patient.address.city,,
-kmehrms.KMEHRMessage.folder.patient.address.street,fhirms.Bundle.Patient.address.line,,
-kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub,fhirms.Bundle.Composition.author,,
-kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org,fhirms.Bundle.Composition.author,,
-kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual,fhirms.Bundle.Composition.author,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.date,fhirms.Bundle.MedicationTreatmentLine.dateAsserted,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.time,fhirms.Bundle.MedicationTreatmentLine.dateAsserted,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-kmehr,fhirms.Bundle.MedicationTreatmentLine.identifier,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-other,fhirms.Bundle.MedicationTreatmentLine.identifier,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedName,fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.display,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedCd,fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.code,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedName,fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.display,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedCd,fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].coding.code,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.magistraltext,fhirms.Bundle.MedicationTreatmentSuspensionLine.medication[CodeableConcept].text,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen,fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment,fhirms.Bundle.MedicationTreatmentSuspensionLine.effectivePeriod.beginDate,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment,fhirms.Bundle.MedicationTreatmentSuspensionLine.effectivePeriod.endDate,,
-kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org,fhirms.Bundle.MedicationTreatmentLine.informationSource,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.text,fhirms.Bundle.MedicationTreatmentLine.dosage.text,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.decimal,fhirms.Bundle.MedicationTreatmentSuspensionLine 0..*.dosage.doseAndRate.doseQuantity.value,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit.cd,fhirms.Bundle.MedicationTreatmentSuspensionLine 0..*.dosage.doseAndRate.doseQuantity.code,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd,fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.route.coding,,
-kmehrms.KMEHRMessage.folder.item-transactionreason.cd,fhirms.adherence.code,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient,fhirms.Bundle.MedicationTreatmentSuspensionLine.dosage.patientInstruction,,
-kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-kmehr,fhirms.Bundle.MedicationTreatmentSuspensionLine.identifier,,
-kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-other,fhirms.Bundle.MedicationTreatmentSuspensionLine.identifier,,
-fhirms.Bundle.Composition.identifier,vidisms.MedicationSchema.identifier,,
-fhirms.Bundle.Composition.author,vidisms.MedicationSchema.author,,
-fhirms.Bundle.MedicationTreatmentLine.identifier,vidisms.MedicationSchema.medicationLine.uniqueID,,
-fhirms.Bundle.MedicationTreatmentLine.medication[Reference],vidisms.MedicationSchema.medicationLine.product.product,,
-fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.system,vidisms.MedicationSchema.medicationLine.product.productCode,,
-fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.code,vidisms.MedicationSchema.medicationLine.product.productCode,,
-fhirms.Bundle.MedicationTreatmentLine.medication[CodeableConcept].coding.display,vidisms.MedicationSchema.medicationLine.product.productCode,,
-fhirms.Bundle.Patient,vidisms.MedicationSchema.patient,,
-fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.beginDate,vidisms.MedicationSchema.medicationLine.treatmentTime.period.startDate,,
-fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.endDate,vidisms.MedicationSchema.medicationLine.treatmentTime.period.endDate,,
-fhirms.Bundle.MedicationTreatmentLine.effectiveDateTime,vidisms.MedicationSchema.medicationLine.treatmentTime.period.startDate,,
-fhirms.duration,vidisms.MedicationSchema.medicationLine.treatmentTime.duration,,
-fhirms.durationUnit,vidisms.MedicationSchema.medicationLine.treatmentTime.duration,,
-fhirms.Bundle.MedicationTreatmentLine.dosage.route.coding,vidisms.MedicationSchema.medicationLine.route,,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.route,,
+source,target,label,status,notes
+KMEHRMS,,,,
+kmehrms.KMEHRMessage,,,skip,transport
+kmehrms.KMEHRMessage.header,,,skip,transport
+kmehrms.KMEHRMessage.header.standard,,,skip,transport
+kmehrms.KMEHRMessage.header.standard.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.date,,,skip,transport
+kmehrms.KMEHRMessage.header.time,,,skip,transport
+kmehrms.KMEHRMessage.header.sender,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-hub,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-hub.id,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-hub.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-hub.name,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.id,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.id-encryptionApplication,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-org.name,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-riziv,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-inss,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.firstname,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.familyname,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.address,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.address.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.address.nis,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-individual.telecom,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-application,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-application.id,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-application.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.sender.hcparty-application.name,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-hub,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-hub.id,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-hub.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-hub.name,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.id,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.id-encryptionApplication,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-org.name,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-riziv,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-inss,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.firstname,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.familyname,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.address.nis,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-individual.telecom,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-application,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-application.id,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-application.cd,,,skip,transport
+kmehrms.KMEHRMessage.header.recipient.hcparty-application.name,,,skip,transport
+kmehrms.KMEHRMessage.folder,,,skip,group
+kmehrms.KMEHRMessage.folder.id-kmehr,,,skip,fixed value
+kmehrms.KMEHRMessage.folder.patient,,,skip,group
+kmehrms.KMEHRMessage.folder.patient.id-inss,fhirms.Bundle.Patient.identifier-niss,,ok,
+kmehrms.KMEHRMessage.folder.patient.firstname,fhirms.Bundle.Patient.name.given,,ok,
+kmehrms.KMEHRMessage.folder.patient.familyname,fhirms.Bundle.Patient.name.family,,ok,
+kmehrms.KMEHRMessage.folder.patient.birthdate,fhirms.Bundle.Patient.birthDate,,ok,
+kmehrms.KMEHRMessage.folder.patient.deathdate,fhirms.Bundle.Patient.deceasedDateTime,,ok,
+kmehrms.KMEHRMessage.folder.patient.sex,,,skip,group
+kmehrms.KMEHRMessage.folder.patient.sex.cd,,,unclear,BePatient does not support all codes
+kmehrms.KMEHRMessage.folder.patient.address,,,skip,group
+kmehrms.KMEHRMessage.folder.patient.address.cd,,,unclear,What is address code
+kmehrms.KMEHRMessage.folder.patient.address.zip,fhirms.Bundle.Patient.address.postalCode,,ok,
+kmehrms.KMEHRMessage.folder.patient.address.city,fhirms.Bundle.Patient.address.city,,ok,
+kmehrms.KMEHRMessage.folder.patient.address.street,fhirms.Bundle.Patient.address.line,,ok,
+kmehrms.KMEHRMessage.folder.patient.address.housenumber,fhirms.Bundle.Patient.address.line,,ok,
+kmehrms.KMEHRMessage.folder.patient.nationality,,,skip,group
+kmehrms.KMEHRMessage.folder.patient.nationality.cd,fhirms.Bundle.Patient.extension-nationality.code.coding.code,,draft,Check valuesets
+kmehrms.KMEHRMessage.folder.patient.usuallanguage,fhirms.Bundle.Patient.communication.language.coding.display,,draft,
+kmehrms.KMEHRMessage.folder.patient.telecom,fhirms.Bundle.Patient.telecom.value,,draft,
+kmehrms.KMEHRMessage.folder.patient.recorddatetime,,,unclear,
+kmehrms.KMEHRMessage.folder.patient.text,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.id-kmehr,fhirms.Bundle.Composition.identifier-kmehr.value,,draft,Note: Describe that transaction is in this case a document
+kmehrms.KMEHRMessage.folder.MSTransaction.id-others,fhirms.Bundle.Composition.identifier-any.value,,draft,
+kmehrms.KMEHRMessage.folder.MSTransaction.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.date,fhirms.Bundle.Composition.date,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.time,fhirms.Bundle.Composition.date,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.author,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.id,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-hub.name,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.id,fhirms.BundleComposition.author-Organization.identifier.value,,draft,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.cd,fhirms.BundleComposition.author-Organization.identifier.type,,draft,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.id-encryptionApplication,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-org.name,fhirms.Bundle.Composition.author-Organization.display,,draft,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-riziv,fhirms.BundleComposition.author-Practitioner.reference(Practitioner).identifier-riziv.value,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-inss,fhirms.BundleComposition.author-Practitioner.reference(Practitioner).identifier-niss.value,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.firstname,fhirms.Bundle.Composition.author-Practitioner.reference(Practitioner).name.given,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.familyname,fhirms.Bundle.Composition.author-Practitioner.reference(Practitioner).name.family,,ok,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.address.nis,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-individual.telecom,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application,,,skip,group
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application.id,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.author.hcparty-application.name,,,unclear,
+kmehrms.KMEHRMessage.folder.MSTransaction.isComplete,,,skip,
+kmehrms.KMEHRMessage.folder.MSTransaction.isValidated,,,skip,
+kmehrms.KMEHRMessage.folder.MSTransaction.version,fhirms.extension-composition-clinicaldocument-versionNumber.versionNumber,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-kmehr,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.id-other,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.date,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.time,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.id,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-hub.name,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.id,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.id-encryptionActor,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.id-encryptionApplication,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.cd-encryptionActor,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-org.name,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-riziv,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-inss,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.id-encryptionActor,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.cd-encryptionActor,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.firstname,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.familyname,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.address.nis,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-individual.telecom,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application.id,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.author.hcparty-application.name,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.isComplete,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.isValidated,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.id,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment.date,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.beginMoment.time,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment.date,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.endMoment.time,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.intendedName,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.intendedCd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.deliveredName,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.medicinalproduct.deliveredCd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.intendedName,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.intendedCd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.deliveredName,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.substanceproduct.deliveredCd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.magistraltext,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.compound,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.content.compoundprescription.formularyReference,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.text,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.lifecycle,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-medication.lnk,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-transactionreason,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-transactionreason.id,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-transactionreason.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-transactionreason.content-text,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-treatmentSuspension.item-transactionreason.content-text.text,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-kmehr,fhirms.Bundle.MedicationTreatmentLine.identifier-kmehr.value,,draft,Needed in FHIR?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.id-other,fhirms.Bundle.MedicationTreatmentLine.identifier-any.value,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.date,fhirms.Bundle.MedicationTreatmentLine.dateAsserted,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.time,fhirms.Bundle.MedicationTreatmentLine.dateAsserted,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.id,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.cd,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-hub.name,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.id,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.cd,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.id-encryptionActor,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.id-encryptionApplication,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.cd-encryptionActor,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-org.name,,,unclear,Is this needed? Requires extension
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-riziv,fhirms.Bundle.MedicationTreatmentLine.informationSource-practitioner.identifier-riziv.value,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-inss,fhirms.Bundle.MedicationTreatmentLine.informationSource-practitioner.identifier-niss.value,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.id-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.cd-encryptionActor,,,skip,transport
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.firstname,fhirms.Bundle.MedicationTreatmentLine.informationSource-practitioner.name.given,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.familyname,fhirms.Bundle.MedicationTreatmentLine.informationSource-practitioner.name.family,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address,,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.address.nis,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-individual.telecom,fhirms.Bundle.MedicationTreatmentLine.informationSource-practitioner.telecom.value,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application.id,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.author.hcparty-application.name,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.isComplete,,,skip,Fixed value in KMEHR
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.isValidated,,,skip,fixed value
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.version,fhirms.Bundle.MedicationTreatmentLine.meta.versionId,,unclear,is this a technical or functional versioning?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.id,,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-category,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-category.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-text,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.content-text.text,fhirms.Bundle.MedicationTreatmentLine.meta.div,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.id,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.cd,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-category,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-category.cd,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-text,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-text.text,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.id,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.cd,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-category,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-category.cd,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-text,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-text.text,,,unclear,Is this used?
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-origin,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationType,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-adaptationFlag,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.id,fhirms.Bundle.MedicationTreatmentLine.identifier-line.value,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.cd,,,skip,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment.date,fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.beginDate,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.beginMoment.time,fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.beginDate,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment.date,fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.endDate,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.endMoment.time,fhirms.Bundle.MedicationTreatmentLine.effectivePeriod.endDate,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.duration,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.duration,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedName,fhirms.Bundle.MedicationTreatmentLine.medicatio[CodeableConcept.coding.display,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.intendedCd,fhirms.Bundle.MedicationTreatmentLine.medicationCodeableConcept.coding.code,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.deliveredName,,,draft,Merges to Intended
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.medicinalproduct.deliveredCd,,,draft,Merges to Intended
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedName,fhirms.Bundle.MedicationTreatmentLine.medicatio[CodeableConcept.coding.display,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.intendedCd,fhirms.Bundle.MedicationTreatmentLine.medicationCodeableConcept.coding.code,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.deliveredName,,,draft,Merges to Intended
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.substanceproduct.deliveredCd,,,draft,Merges to Intended
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription,,,group,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.magistraltext,fhirms.Bundle.MedicationTreatmentLine.medicationCodeableConcept.text,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.compound,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content-medicationIdentification.compoundprescription.formularyReference,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.content,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.text,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.temporality,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.temporality.cd,,,unclear,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency.periodicity,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.frequency.periodicity.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.period,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.text,fhirms.Bundle.MedicationTreatmentLine.dosage.text,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.low,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.high,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.unit,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.posology.takes,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.date,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.event,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.dayOfWeek,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daynumber,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.offset,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.time,,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod.cd,,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.decimal,fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.doseAndRate.doseQuantity.value,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit,,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit.cd,fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.doseAndRate.doseQuantity.code,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.route.coding,,draft,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForOverDosing,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForReimbursement,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.isSubstitutionAllowed,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.feedback,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.local,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.batch,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.deliveryDate,,,skip,not used
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient,fhirms.Bundle.MedicationTreatmentLine.dosage.patientInstruction,,ok
+kmehrms,,,skip,group

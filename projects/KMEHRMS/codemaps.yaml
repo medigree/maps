@@ -10,11 +10,14 @@
     x: 1030
     'y': 850
   group: g1
-  id: transformShape
   leftRows:
     - label: <a href="#tab2">TEMPORALITY</a>
+      id: Temporality.l.TEMPORALITY
   rightRows:
-    - label: (New)
+    - label: VSTemporality
+      id: Temporality.r.VSTemporality
+  id: Temporality
+    
 
 - type: Transform
   rowHeight: 25
@@ -29,9 +32,11 @@
     'y': 635
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-ITEM</a>
+      id: ItemType.l.CD-ITEM
   rightRows:
     - label: ItemType
-  id: eb3a4efc-2fae-4a90-a6be-b3441debe50e
+      id: ItemType.r.ItemType
+  id: ItemType
 
 - type: Transform
   rowHeight: 25
@@ -46,9 +51,11 @@
     'y': 55
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-TRANSACTION</a>
+      id: TransactionType.l.CD-TRANSACTION
   rightRows:
     - label: TransactionType
-  id: 78b6f308-8e38-465c-8b93-cf4ed6a822ab
+      id: TransactionType.r.TransactionType
+  id: TransactionType
 
 - type: Transform
   rowHeight: 25
@@ -63,9 +70,11 @@
     'y': 935
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-LIFECYCLE</a>
+      id: LifeCycle.l.CD-LIFECYCLE
   rightRows:
     - label: MedicationLineStatus
-  id: f47627d6-04e7-42d8-a2e9-8501839d4674
+      id: LifeCycle.r.MedicationLineStatus
+  id: LifeCycle
 
 - type: Transform
   rowHeight: 25
@@ -80,9 +89,11 @@
     'y': 1045
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-DAYPERIOD</a>
+      id: DayPeriod.l.CD-DAYPERIOD
   rightRows:
     - label: TimeOfDay
-  id: 0da2c9f9-5b2e-4b24-adc5-98d92ca91f92
+      id: DayPeriod.r.DayPeriod
+  id: DayPeriod
 
 - type: Transform
   rowHeight: 25
@@ -97,9 +108,11 @@
     'y': 1145
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-ADMINISTRATIONUNIT</a>
+      id: AdministrationUnit.l.CD-ADMINISTRATIONUNIT
   rightRows:
     - label: UnitOfAdministration
-  id: d387ede0-514d-4278-aa6f-b52990cfa230
+      id: AdministrationUnit.r.UnitOfAdministration
+  id: AdministrationUnit
 
 - type: Transform
   rowHeight: 25
@@ -114,9 +127,11 @@
     'y': 1240
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-DRUG-ROUTE</a>
+      id: RouteOfAdministration.l.CD-DRUG-ROUTE
   rightRows:
     - label: BeVSRouteOfAdministration
-  id: 0f2a3f49-a4db-4d41-947d-548789854628
+      id: RouteOfAdministration.r.BeVSRouteOfAdministration
+  id: RouteOfAdministration
 
 - type: Transform
   rowHeight: 25
@@ -131,9 +146,11 @@
     'y': 435
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-FED-COUNTRY</a>
+      id: Country.l.CD-FED-COUNTRY
   rightRows:
     - label: CountryCode
-  id: 436360e7-81f1-4d0c-a132-886822220a9f
+      id: Country.r.CountryCode
+  id: Country
 
 - type: Transform
   rowHeight: 25
@@ -148,9 +165,11 @@
     'y': 545
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-ADDRESS</a>
+      id: MSItemType.l.CD-ADDRESS
   rightRows:
     - label: AddressCode
-  id: f3679c5e-69ac-4b5e-88b1-8fbd332dae38
+      id: MSItemType.r.AddressCode
+  id: MSItemType
 
 - type: Transform
   rowHeight: 25
@@ -165,9 +184,11 @@
     'y': 1440
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-ITEM-MS</a>
+      id: MSItemType.l.CD-ITEMS-MS
   rightRows:
     - label: MSLineType
-  id: a9ce47ad-6a51-4ea7-8c59-c0193b6962a2
+      id: MSItemType.r.MSLineType
+  id: MSItemType
 
 - type: Transform
   rowHeight: 25
@@ -182,9 +203,11 @@
     'y': 1345
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-PERIODICITY</a>
+      id: Periodicity.l.CD-PERIODICITY
   rightRows:
     - label: Fequency
-  id: 35b66dba-7acb-41a8-9477-932d87dfada0
+      id: Periodicity.r.frequency
+  id: Periodicity
 
 - type: Transform
   rowHeight: 25
@@ -199,9 +222,11 @@
     'y': 1870
   leftRows:
     - label: <a target=\"_blank\" href='#'>CD-WEEKDAY</a>
+      id: WeekDay.l.CD-WEEKDAY
   rightRows:
     - label: DayOfWeek
-  id: 28a774a6-420e-4a71-9068-2c1e16c7ed63
+      id: WeekDay.r.DayOfWeek
+  id: WeekDay
   
 - type: Transform
   rowHeight: 25
@@ -216,7 +241,10 @@
     'y': 325
   leftRows:
     - label: <a target=\"_blank\" href='#'>SEX</a>
+      id: CMSex.l.sex
   rightRows:
     - label: BeVSSex
+      id: CMSex.r.BeVSSex
     - label: changed
-  id: 59b5c4aa-2f85-407a-908e-7881f3dc9984
+      id: CMSex.r.sexChanged
+  id: CMSex

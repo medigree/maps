@@ -167,6 +167,8 @@
               rows:
                 - label: id-inss
                   id: kmehrms.KMEHRMessage.folder.patient.id-inss
+                  cardinality: 0..1
+                  datatype: identifier
                 - label: firstname
                   id: kmehrms.KMEHRMessage.folder.patient.firstname
                 - label: familyname
@@ -208,6 +210,7 @@
                   id: kmehrms.KMEHRMessage.folder.patient.text
               id: kmehrms.KMEHRMessage.folder.patient
             - label: MSTransaction
+              isCollapsed: true
               rows:
                 - label: id-kmehr
                   id: kmehrms.KMEHRMessage.folder.MSTransaction.id-kmehr
@@ -409,11 +412,44 @@
                 - label: version
                   id: >-
                     kmehrms.KMEHRMessage.folder.MSETransaction-medication.version
+                - label: item-beginCondition
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition
+                  rows:
+                  - label: id
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.id
+                  - label: cd
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.cd
+                  - label: content-category
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-category
+                    rows:
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-category.cd
+                  - label: content-text
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-text
+                    rows:
+                    - label: text
+                      id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-beginCondition.content-text.text
+                - label: item-endCondition
+                  id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition
+                  rows:
+                  - label: id
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.id
+                  - label: cd
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.cd
+                  - label: content-category
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-category
+                    rows:
+                    - label: cd
+                      id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-category.cd
+                  - label: content-text
+                    id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-text
+                    rows:
+                    - label: text
+                      id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-endCondition.content-text.text
                 - label: item-medicationUse
                   rows:
                     - label: id
-                      id: >-
-                        kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.id
+                      id: kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.id
                     - label: cd
                       id: >-
                         kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medicationUse.cd
@@ -636,6 +672,7 @@
                     kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication
               id: kmehrms.KMEHRMessage.folder.MSETransaction-medication
             - label: MSETransaction-treatmentSuspension
+              isCollapsed: true
               rows:
                 - label: id-kmehr
                   id: >-
@@ -868,3 +905,85 @@
   id: kmehrms
   label: KMEHRMS
 
+
+# - type: Transform
+#   group: g1
+#   rowHeight: 25
+#   headerText: <a href="#temporality">Temporality</a>
+#   attrs:
+#     header:
+#       fill: '#cfc615'
+#   position:
+#     x: 995
+#     'y': 1055
+#   id: transformShape
+#   leftRows:
+#     - label: <a href="#tab2">TEMPORALITY</a>
+#   rightRows:
+#     - label: (New)
+# - type: Transform
+#   rowHeight: 25
+#   headerText: Periodicity
+#   attrs:
+#     header:
+#       fill: '#cfc615'
+#   position:
+#     x: 995
+#     'y': 1200
+#   leftRows:
+#     - label: <a target=\"_blank\" href='#'>Periodicity (New)</a>
+#   rightRows:
+#     - label: (New)
+#   id: f58fe9a8-9029-4313-9a2c-a3c17874e215
+# - type: Transform
+#   rowHeight: 25
+#   headerText: DayPeriod
+#   attrs:
+#     header:
+#       fill: '#cfc615'
+#   position:
+#     x: 1030
+#     'y': 1285
+#   leftRows:
+#     - label: <a target=\"_blank\" href='#'>DayPeriod</a>
+#   rightRows:
+#     - label: (New)
+#   id: f7b79056-af23-4c34-8a49-3fe76e0639ff
+
+# - type: Transform
+#   rowHeight: 25
+#   headerText: AdministrationUnit
+#   attrs:
+#     header:
+#       fill: '#cfc615'
+#   position:
+#     x: 900
+#     'y': 1460
+#   leftRows:
+#     - label: <a target=\"_blank\" href='#'>AdministrationUnit</a>
+#   rightRows:
+#     - label: BeVSRoutesOfAdministration
+#   id: 675d8d61-f231-4ab3-afdb-aa4adfc60096
+
+
+# - type: Transform
+#   rowHeight: 25
+#   headerText: Sex
+#   attrs:
+#     header:
+#       fill: '#cfc615'
+#     headerLabel:
+#       html: Sex
+#   position:
+#     x: 1025
+#     'y': 325
+#   leftRows:
+#     - label: CD-SEXvalues
+#       id: Sex.l.CD-SEXvalues
+#   rightRows:
+#     - label: gender
+#       id: Sex.r.gender
+#     - label: changed
+#       id: Sex.r.changed
+#   id: Sex
+#   group: undefined
