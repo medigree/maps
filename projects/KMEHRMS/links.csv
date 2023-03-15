@@ -1,5 +1,4 @@
 source,target,label,status,notes
-KMEHRMS,,,,
 kmehrms.KMEHRMessage,,,skip,transport
 kmehrms.KMEHRMessage.header,,,skip,transport
 kmehrms.KMEHRMessage.header.standard,,,skip,transport
@@ -292,17 +291,13 @@ kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen,,,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.date,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.event,,draft,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday,,,skip,group
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.weekday.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.dayOfWeek,,draft,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daynumber,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.offset,,draft,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime,,,skip,group
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.time,,,draft,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod,,,skip,group
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daytime.dayperiod.cd,,,draft,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity,,,skip,group
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.decimal,fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.doseAndRate.doseQuantity.value,,ok,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit,,,ok,
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit.cd,fhirms.Bundle.MedicationTreatmentLine 0..*.dosage.doseAndRate.doseQuantity.code,,ok,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route,,,skip,group
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.route.coding,,draft,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForOverDosing,,,skip,not used
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionForReimbursement,,,skip,not used
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.isSubstitutionAllowed,,,skip,not used
@@ -310,5 +305,8 @@ kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.feedback,,
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.local,,,skip,not used
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.batch,,,skip,not used
 kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.deliveryDate,,,skip,not used
-kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient,fhirms.Bundle.MedicationTreatmentLine.dosage.patientInstruction,,ok
-kmehrms,,,skip,group
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.instructionforpatient,fhirms.Bundle.MedicationTreatmentLine.dosage.patientInstruction,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.daynumber,fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.offset,,,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.decimal,fhirms.Bundle.MedicationTreatmentLine.dosage.doseAndRate.doseQuantity.value,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.regimen.quantity.unit.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.doseAndRate.doseQuantity.code,,ok,
+kmehrms.KMEHRMessage.folder.MSETransaction-medication.item-medication.route.cd,fhirms.Bundle.MedicationTreatmentLine.dosage.route.coding,,draft,

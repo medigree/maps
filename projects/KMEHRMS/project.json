@@ -1,1 +1,1 @@
-{"name":"KMEHR-MS", "title":"KMEHR MS", "groups": [{"id":"main","name": "Main", "files":["graph.yaml", "codemaps.yaml", "links.csv", "graph2.yaml"]}]}
+{"name":"KMEHR-MS", "title":"KMEHR MS", "groups": [{"id":"main","name": "Main", "files":["graph.yaml", "codemaps.yaml", "graph2.yaml", "links.csv"]}]}

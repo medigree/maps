@@ -292,6 +292,7 @@
                               - label: code
                                 id: fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.when.extension-BeDayPeriod.coding.code
                         - label: offset
+                          id: fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat.offset
                       id: fhirms.Bundle.MedicationTreatmentLine.dosage.timing.repeat
                 - label: route
                   rows:
